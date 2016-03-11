@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/dp_ten"
+    android:background="@drawable/viewbg_more"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/dp_five" >
+
+    <ImageView
+        android:id="@+id/message_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_telvel"
+        android:src="@drawable/bullet_blue" />
+
+    <TextView
+        android:id="@+id/expandable_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_telvel"
+        android:layout_toRightOf="@+id/message_1"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv_balck"
+        android:textStyle="bold"
+        android:text="title"
+        android:textSize="@dimen/sp_sixteen" />
+
+    <ImageView
+        android:id="@+id/group_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0" 
+        />
+     <TextView
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/group_arrow"
+        android:layout_marginRight="@dimen/dp_fourteen"
+        android:text="cash"
+        android:scaleX="1.0"
+        android:scaleY="1.0" 
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

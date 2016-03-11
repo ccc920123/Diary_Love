@@ -1,0 +1,81 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ul, ol, li,
+form, label, fieldset, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+img, input, select, button, span {
+    vertical-align: middle;
+}
+
+.Canvas_Form td {
+    vertical-align: top;
+}
+
+html {
+    font-size: 10px;
+}
+
+textarea, input, select, button {
+    font-family: "宋体", Arial;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: "宋体", Arial;
+}
+
+:focus {
+    outline: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+.clear{
+	clear:both;
+	font-size:0px;
+	height:0px;
+}
+
+.FLRR_ {
+    _height: 1%;
+}
+
+    .FLRR_ .FL_ {
+        float: left;
+        margin-left: -100%;
+    }
+
+    .FLRR_ .FR_P_ {
+        float: left;
+        width: 100%;
+    }
