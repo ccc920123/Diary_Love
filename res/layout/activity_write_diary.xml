@@ -101,7 +101,7 @@
                 android:visibility="gone" />
         </LinearLayout>
 
-        <com.chenpan.heart.diary.view.BiuEditText
+        <com.cdjysdkj.diary.view.BiuEditText
             android:id="@+id/edit_diary_info"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

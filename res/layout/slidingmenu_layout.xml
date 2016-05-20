@@ -12,8 +12,9 @@
         android:layout_marginTop="25dp"
         android:orientation="vertical" >
 
-        <com.chenpan.heart.diary.view.ClickContinue
+        <com.cdjysdkj.diary.view.ClickContinue
             android:id="@+id/lighttext"
+            android:layout_marginTop="20dip"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="你是如何回忆我，带着笑或是很沉默!" />
@@ -47,8 +48,8 @@
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 
-                <com.chenpan.heart.diary.view.switchbutton.SwitchButton
-                    android:id="@+id/lock"
+                <com.cdjysdkj.diary.view.switchbutton.SwitchButton 
+                                    android:id="@+id/lock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -114,7 +115,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.chenpan.heart.diary.view.IOSmoveTextView
+    <com.cdjysdkj.diary.view.IOSmoveTextView
         android:id="@+id/ios_move"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

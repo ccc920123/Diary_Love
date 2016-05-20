@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <com.chenpan.heart.diary.widget.ActionBar 
+    <com.cdjysdkj.diary.widget.ActionBar 
 	    android:id="@+id/actionbar_base"
 	    style="@style/ActionBar"
 	    android:layout_weight="0"

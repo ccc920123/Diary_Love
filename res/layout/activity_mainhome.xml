@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.chenpan.heart.diary.sliding.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.cdjysdkj.diary.sliding.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/side_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:clickable="true"
-    android:orientation="vertical"
     android:background="@drawable/all_bg"
-     >
-     <!-- 此处毕设背景，不然null指针 -->
-  <!-- 左侧菜单页面 -->
+    android:clickable="true"
+    android:orientation="vertical" >
 
-    <include layout="@layout/slidingmenu_layout"/>
-     <com.chenpan.heart.diary.sliding.MyRelativeLayout
+    <!-- 此处毕设背景，不然null指针 -->
+    <!-- 左侧菜单页面 -->
+
+    <include layout="@layout/slidingmenu_layout" />
+
+    <com.cdjysdkj.diary.sliding.MyRelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#eeeeee"
         android:orientation="vertical" >
-        <!--右界面  -->
-        <include 
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          layout="@layout/activity_home"/>
-        </com.chenpan.heart.diary.sliding.MyRelativeLayout>
-  
- 
-</com.chenpan.heart.diary.sliding.DragLayout>
+
+        <!-- 右界面 -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/activity_home" />
+    </com.cdjysdkj.diary.sliding.MyRelativeLayout>
+
+</com.cdjysdkj.diary.sliding.DragLayout>

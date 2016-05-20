@@ -5,11 +5,11 @@
     tools:context=".TextDiaryActivity"
     android:background="@drawable/list_bg" >
 
-    <com.chenpan.heart.diary.view.ListView3D
+    <com.cdjysdkj.diary.view.ListView3D
         android:id="@+id/my_listview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
          >
-    </com.chenpan.heart.diary.view.ListView3D>
+    </com.cdjysdkj.diary.view.ListView3D>
 
 </RelativeLayout>

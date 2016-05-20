@@ -88,7 +88,7 @@
                     android:layout_height="fill_parent"
                     android:orientation="horizontal">
 
-                    <com.chenpan.heart.diary.view.NoteEditText
+                    <com.cdjysdkj.diary.view.NoteEditText
                         android:id="@+id/note_edit_view"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"

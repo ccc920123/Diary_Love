@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chenpan.heart.diary"
+    package="com.cdjysdkj.diary"
     android:versionCode="2"
     android:versionName="1.0.1.1" >
 
@@ -29,13 +29,13 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
-        android:name="com.chenpan.heart.diary.application.MyApplication"
+        android:name="com.cdjysdkj.diary.application.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.chenpan.heart.diary.WelcomeActivity"
+            android:name="com.cdjysdkj.diary.WelcomeActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
@@ -46,78 +46,78 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.GuideActivity"
+            android:name="com.cdjysdkj.diary.GuideActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.HomeActivity"
+            android:name="com.cdjysdkj.diary.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.PasswordActivity"
+            android:name="com.cdjysdkj.diary.PasswordActivity"
             android:label="@string/title_activity_password" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.TextDiaryActivity"
+            android:name="com.cdjysdkj.diary.TextDiaryActivity"
             android:label="@string/title_activity_text_diary"
             android:launchMode="singleTask" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.WriteDiaryActivity"
+            android:name="com.cdjysdkj.diary.WriteDiaryActivity"
             android:label="@string/title_activity_write_diary"
             android:launchMode="singleTask" >
         </activity>
-        <activity android:name="com.chenpan.heart.diary.ImageDetailsActivity" >
+        <activity android:name="com.cdjysdkj.diary.ImageDetailsActivity" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.MomentActivity"
+            android:name="com.cdjysdkj.diary.MomentActivity"
             android:label="@string/title_activity_moment"
             android:launchMode="standard" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.EditImageActivity"
+            android:name="com.cdjysdkj.diary.EditImageActivity"
             android:label="@string/title_activity_edit_image" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.BillActivity"
+            android:name="com.cdjysdkj.diary.BillActivity"
             android:label="@string/title_activity_bill" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.TabBillActivity"
+            android:name="com.cdjysdkj.diary.TabBillActivity"
             android:label="@string/title_activity_tab_bill" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.AccountActivity"
+            android:name="com.cdjysdkj.diary.AccountActivity"
             android:label="@string/title_activity_account" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.AddBillActivity"
+            android:name="com.cdjysdkj.diary.AddBillActivity"
             android:label="@string/title_activity_add_bill"
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.TransferActivity"
+            android:name="com.cdjysdkj.diary.TransferActivity"
             android:label="@string/title_activity_transfer" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.NotesListActivity"
+            android:name="com.cdjysdkj.diary.NotesListActivity"
             android:launchMode="singleTask" >
         </activity>
-        <activity android:name="com.chenpan.heart.diary.NoteEditActivity" >
+        <activity android:name="com.cdjysdkj.diary.NoteEditActivity" >
         </activity>
 
         <provider
-            android:name="com.chenpan.heart.diary.bean.NotesProvider"
+            android:name="com.cdjysdkj.diary.bean.NotesProvider"
             android:authorities="chenpan_notes"
             android:multiprocess="true" />
 
         <activity
-            android:name="com.chenpan.heart.diary.AboutActivity"
+            android:name="com.cdjysdkj.diary.AboutActivity"
             android:label="@string/title_activity_about" >
         </activity>
         <activity
-            android:name="com.chenpan.heart.diary.AdviceActivity"
+            android:name="com.cdjysdkj.diary.AdviceActivity"
             android:label="@string/title_activity_advice" >
         </activity>
         <!-- 分享 -->
@@ -150,7 +150,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="com.chenpan.heart.diary.CenterActivity"
+            android:name="com.cdjysdkj.diary.CenterActivity"
             android:label="@string/title_activity_center" >
         </activity>
     </application>

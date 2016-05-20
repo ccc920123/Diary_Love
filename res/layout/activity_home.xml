@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:circle="http://schemas.android.com/apk/res/com.chenpan.heart.diary"
-    android:layout_width="match_parent"
+    xmlns:circle="http://schemas.android.com/apk/res/com.cdjysdkj.diary"
+      android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/home_bg" >
 
@@ -60,7 +60,7 @@
 
                 <!-- android:layoutAnimation="@anim/layout_animation" -->
 
-                <com.chenpan.heart.diary.view.CircleLayout
+                <com.cdjysdkj.diary.view.CircleLayout
                     android:id="@+id/main_circle_layout"
                     android:layout_width="300dip"
                     android:layout_height="fill_parent"
@@ -69,7 +69,7 @@
                     circle:isRotating="true"
                     circle:rotateToCenter="false" >
 
-                    <com.chenpan.heart.diary.view.CircleImageView
+                    <com.cdjysdkj.diary.view.CircleImageView
                         android:id="@+id/laybtn1"
                         circle:name="jsb"
                         android:layout_width="35dp"
@@ -90,9 +90,9 @@
                             android:gravity="center"
                             android:text="日  记  本"
                             android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
+                    </com.cdjysdkj.diary.view.CircleImageView>
 
-                    <com.chenpan.heart.diary.view.CircleImageView
+                    <com.cdjysdkj.diary.view.CircleImageView
                         android:id="@+id/laybtn6"
                         circle:name="shdd"
                         android:layout_width="wrap_content"
@@ -113,9 +113,9 @@
                             android:gravity="center"
                             android:text="生活账单"
                             android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
+                    </com.cdjysdkj.diary.view.CircleImageView>
 
-                    <com.chenpan.heart.diary.view.CircleImageView
+                    <com.cdjysdkj.diary.view.CircleImageView
                         android:id="@+id/laybtn5"
                         circle:name="jcsj"
                         android:layout_width="wrap_content"
@@ -136,9 +136,9 @@
                             android:gravity="center"
                             android:text="精彩瞬间"
                             android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
+                    </com.cdjysdkj.diary.view.CircleImageView>
 
-                    <com.chenpan.heart.diary.view.CircleImageView
+                    <com.cdjysdkj.diary.view.CircleImageView
                         android:id="@+id/laybtn4"
                         circle:name="qqh"
                         android:layout_width="wrap_content"
@@ -159,56 +159,8 @@
                             android:gravity="center"
                             android:text="生活便签"
                             android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
-
-                    <!--
-                    <com.chenpan.heart.diary.view.CircleImageView
-                        android:id="@+id/laybtn3"
-                        circle:name="指南"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" >
-
-                        <ImageView
-                            android:id="@+id/cunqian"
-                            android:layout_width="50dip"
-                            android:layout_height="50dip"
-                            android:layout_gravity="center"
-                            android:src="@drawable/sanbanyuan" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="指南"
-                            android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
-
-                    <com.chenpan.heart.diary.view.CircleImageView
-                        android:id="@+id/laybtn2"
-                        circle:name="地图"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" >
-
-                        <ImageView
-                            android:id="@+id/tingzi"
-                            android:layout_width="50dip"
-                            android:layout_height="50dip"
-                            android:layout_gravity="center"
-                            android:src="@drawable/tingzi" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="地图"
-                            android:textSize="14dip" />
-                    </com.chenpan.heart.diary.view.CircleImageView>
-                    -->
-                </com.chenpan.heart.diary.view.CircleLayout>
+                    </com.cdjysdkj.diary.view.CircleImageView>
+                </com.cdjysdkj.diary.view.CircleLayout>
 
                 <RelativeLayout
                     android:id="@+id/relbtn"
