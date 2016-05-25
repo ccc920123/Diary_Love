@@ -256,14 +256,14 @@ public class ImageFilterAdapter extends BaseAdapter {
 		//	int width = 100;// bmImg.getWidth();
 		//	int height = 100;// bmImg.getHeight();
 			bmImg.recycle();
-			final ViewHolder holder ;
+			final ViewHolders holder ;
 			if(convertView == null){
-    			holder = new ViewHolder();
+    			holder = new ViewHolders();
     			convertView = View.inflate(mContext, R.layout.image_item, null);
     			holder.image = (ImageView) convertView.findViewById(R.id.image);
     			convertView.setTag(holder);
     		}else {
-    			holder = (ViewHolder) convertView.getTag();
+    			holder = (ViewHolders) convertView.getTag();
     		}
 			holder.image.setImageResource(filterArray.get(position).filterID);
 		//	holder.image.setLayoutParams(new Gallery.LayoutParams(width, height));
@@ -271,6 +271,6 @@ public class ImageFilterAdapter extends BaseAdapter {
 			return convertView;
 		}
 	};
-	class ViewHolder{
+	class ViewHolders{
     	ImageView image;
     }

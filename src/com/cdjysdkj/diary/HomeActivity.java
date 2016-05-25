@@ -100,7 +100,7 @@ public class HomeActivity extends BaseHomeActivity implements
 		circleMenu.setOnItemSelectedListener(this);
 		circleMenu.setOnItemClickListener(this);
 
-		//relbtn.setOnClickListener(onclicklister);
+		relbtn.setOnClickListener(onclicklister);
 		shareLayout.setOnClickListener(onclicklister);
 		aboutLayout.setOnClickListener(onclicklister);
 		adviceLayout.setOnClickListener(onclicklister);

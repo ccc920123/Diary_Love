@@ -69,5 +69,6 @@
     
     <dimen name="text_wight">80dp</dimen>
     <dimen name="register_text">65dp</dimen>
+    <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
 
 </resources>
