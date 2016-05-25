@@ -19,4 +19,7 @@ public  static int  tableindex;
 public static int HOMETIMES=0;
 public static String MYAPP_PATH_ICON=Environment.getExternalStorageDirectory().getAbsolutePath()
 + File.separator+"DIARY"+ File.separator+"test.jpg";
+
+public static String KEY="8ccb360438f1eabae3afad356b734a6f";
+//public static String KEY="e59b086b3ef990049b3056d6a5d5e342";
 }

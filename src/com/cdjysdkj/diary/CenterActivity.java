@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
@@ -109,9 +110,15 @@ public class CenterActivity extends BaseHomeActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //        	ToastFactory.getToast(CenterActivity.this, parent.getAdapter().getItem(position).toString()).show();
         	TextView textView = (TextView) view.findViewById(R.id.item_title);
-        if(textView.getText().toString().equals("号码归属地"))
+        	Intent intent=new Intent();
+        	String str=textView.getText().toString().trim();
+        if(("号码归属地").equals(str))
         {
-        	ToastFactory.getToast(CenterActivity.this, "号码归属地").show();
+        	
+        	intent.setClass(CenterActivity.this, MobileNoActivity.class);
+        	startActivity(intent);
+        	finish();
+        	//ToastFactory.getToast(CenterActivity.this, "号码归属地").show();
         }else if(textView.getText().toString().equals("身份证查询"))
         {
         	ToastFactory.getToast(CenterActivity.this, "身份证查询").show();

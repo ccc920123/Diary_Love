@@ -18,7 +18,7 @@ package com.cdjysdkj.diary.bean;
 
 import android.net.Uri;
 public class Notes {
-    public static final String AUTHORITY = "chenpan_notes";
+    public static final String AUTHORITY = "cdjysdkj_notes";
     public static final String TAG = "Notes";
     public static final int TYPE_NOTE     = 0;
     public static final int TYPE_FOLDER   = 1;

@@ -109,7 +109,7 @@
 
         <provider
             android:name="com.cdjysdkj.diary.bean.NotesProvider"
-            android:authorities="chenpan_notes"
+            android:authorities="cdjysdkj_notes"
             android:multiprocess="true" />
 
         <activity
@@ -152,6 +152,10 @@
         <activity
             android:name="com.cdjysdkj.diary.CenterActivity"
             android:label="@string/title_activity_center" >
+        </activity>
+        <activity
+            android:name="com.cdjysdkj.diary.MobileNoActivity"
+            android:label="@string/title_activity_mobile_no" >
         </activity>
     </application>
 
