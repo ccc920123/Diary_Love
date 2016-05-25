@@ -21,5 +21,5 @@ public static String MYAPP_PATH_ICON=Environment.getExternalStorageDirectory().g
 + File.separator+"DIARY"+ File.separator+"test.jpg";
 
 public static String KEY="8ccb360438f1eabae3afad356b734a6f";
-//public static String KEY="e59b086b3ef990049b3056d6a5d5e342";
+public static String IDCARDKEY="f8c4fd868695065591d0265f6d8f9acd";//身份证查询
 }

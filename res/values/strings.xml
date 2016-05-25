@@ -124,5 +124,6 @@
     <string name="title_activity_advice">AdviceActivity</string>
     <string name="title_activity_center">CenterActivity</string>
     <string name="title_activity_mobile_no">MobileNoActivity</string>
+    <string name="title_activity_idcard">IDCARDActivity</string>
 
 </resources>

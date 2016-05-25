@@ -119,9 +119,12 @@ public class CenterActivity extends BaseHomeActivity {
         	startActivity(intent);
         	finish();
         	//ToastFactory.getToast(CenterActivity.this, "号码归属地").show();
-        }else if(textView.getText().toString().equals("身份证查询"))
+        }else if("身份证查询".equals(str))
         {
-        	ToastFactory.getToast(CenterActivity.this, "身份证查询").show();
+        	intent.setClass(CenterActivity.this, IDCARDActivity.class);
+        	startActivity(intent);
+        	finish();
+//        	ToastFactory.getToast(CenterActivity.this, "身份证查询").show();
         	
         }
         }

@@ -157,6 +157,10 @@
             android:name="com.cdjysdkj.diary.MobileNoActivity"
             android:label="@string/title_activity_mobile_no" >
         </activity>
+        <activity
+            android:name="com.cdjysdkj.diary.IDCARDActivity"
+            android:label="@string/title_activity_idcard" >
+        </activity>
     </application>
 
 </manifest>
