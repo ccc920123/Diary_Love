@@ -161,6 +161,14 @@
             android:name="com.cdjysdkj.diary.IDCARDActivity"
             android:label="@string/title_activity_idcard" >
         </activity>
+        <activity
+            android:name="com.cdjysdkj.diary.IPActivity"
+            android:label="@string/title_activity_ip" >
+        </activity>
+        <activity
+            android:name="com.cdjysdkj.diary.PostCodeActivity"
+            android:label="@string/title_activity_post_code" >
+        </activity>
     </application>
 
 </manifest>

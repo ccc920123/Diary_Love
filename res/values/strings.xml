@@ -125,5 +125,7 @@
     <string name="title_activity_center">CenterActivity</string>
     <string name="title_activity_mobile_no">MobileNoActivity</string>
     <string name="title_activity_idcard">IDCARDActivity</string>
+    <string name="title_activity_ip">IPActivity</string>
+    <string name="title_activity_post_code">PostCodeActivity</string>
 
 </resources>

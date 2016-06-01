@@ -126,6 +126,18 @@ public class CenterActivity extends BaseHomeActivity {
         	finish();
 //        	ToastFactory.getToast(CenterActivity.this, "身份证查询").show();
         	
+        }else if("IP地址".equals(str))
+        {
+        	intent.setClass(CenterActivity.this, IPActivity.class);
+        	startActivity(intent);
+        	finish();
+        }else if("邮编查询".equals(str))
+        {
+        	intent.setClass(CenterActivity.this, PostCodeActivity.class);
+        	startActivity(intent);
+        	finish();
+        	
+        	
         }
         }
     });
