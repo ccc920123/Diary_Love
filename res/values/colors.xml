@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="red">#FF0000</color>
     <color name="blue">#7B68EE</color>
-     <color name="blue2">#1896E0</color>
+    <color name="blue2">#1896E0</color>
     <color name="qing">#48D1CC</color>
     <color name="greed">#008B8B</color>
     <color name="purple">#8B008B</color>
     <color name="yellow">#EEEE00</color>
+
     <array name="splsh_circle_color">
         <item>@color/red</item>
         <item>@color/blue</item>
@@ -15,6 +17,7 @@
         <item>@color/purple</item>
         <item>@color/yellow</item>
     </array>
+
     <color name="content">#626265</color>
     <color name="checkno">#B0B0B0</color>
     <color name="checkyes">#70BBE7</color>
@@ -39,10 +42,8 @@
     <color name="dialog_listitem_press">#ffd0dce4</color>
     <color name="black">#ff000000</color>
     <color name="translucence_50">#50000000</color>
-    
     <color name="plight_text">#666666</color>
     <color name="btom_line">#d9d9d9</color>
-    
     <color name="actionbar_separator">#00000000</color>
     <color name="actionbar_background_start">#D95555</color>
     <color name="actionbar_background_end">#D95555</color>
@@ -52,12 +53,17 @@
     <color name="qq_common_bg">#ffdddddd</color>
     <color name="theme_color">#D95555</color>
     <!-- alert -->
-     <color name="alertdialog_line">#c6c6c6</color>
-       <color name="actionsheet_blue">#037BFF</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
     <color name="actionsheet_red">#FD4A2E</color>
     <color name="actionsheet_gray">#8F8F8F</color>
     <color name="user_query_highlight">#335b5b5b</color>
     <color name="province_line_border">#C7C7C7</color>
-    
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_item_bg">#6086a3</color>
+    <color name="color_view_bg">#1e6390</color>
+    <color name="color_view_btn">#1fbaf3</color>
 
 </resources>

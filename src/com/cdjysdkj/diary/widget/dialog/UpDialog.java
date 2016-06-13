@@ -1,5 +1,7 @@
 package com.cdjysdkj.diary.widget.dialog;
 
+import com.cdjysdkj.diary.R;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -7,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import com.cdjysdkj.diary.R;
 
 public class UpDialog extends Dialog implements OnClickListener {
 	private TextView leftTextView, rightTextView;

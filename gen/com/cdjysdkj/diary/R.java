@@ -26,6 +26,22 @@ public final class R {
         public static final int splsh_circle_color=0x7f090000;
     }
     public static final class attr {
+        /** <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>2147483647</td><td></td></tr>
+</table>
+         */
+        public static final int actionDistance=0x7f010010;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -68,6 +84,42 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int circleBackground=0x7f010003;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int civ_border_color=0x7f010021;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int civ_border_overlay=0x7f010022;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int civ_border_width=0x7f010020;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int civ_fill_color=0x7f010023;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -97,7 +149,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int lineColor=0x7f01000d;
+        public static final int lineColor=0x7f01001e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -107,7 +159,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int lineWidth=0x7f01000e;
+        public static final int lineWidth=0x7f01001f;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int maxRotation=0x7f01000e;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -121,13 +181,111 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int nodeOnSrc=0x7f01000c;
+        public static final int nodeOnSrc=0x7f01001d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int nodeSrc=0x7f01000b;
+        public static final int nodeSrc=0x7f01001c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int numberProgressBarStyle=0x7f010011;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_current=0x7f010012;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_max=0x7f010013;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_reached_bar_height=0x7f010016;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_reached_color=0x7f010015;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_text_color=0x7f010019;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_text_offset=0x7f01001a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_text_size=0x7f010018;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>visible</code></td><td>0</td><td></td></tr>
+<tr><td><code>invisible</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int progress_text_visibility=0x7f01001b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_unreached_bar_height=0x7f010017;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int progress_unreached_color=0x7f010014;
         /** 侧滑  
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -147,6 +305,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int rotateToCenter=0x7f010005;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int scaleDownGravity=0x7f01000f;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -155,6 +321,30 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int title=0x7f010008;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unselectedAlpha=0x7f01000b;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unselectedSaturation=0x7f01000c;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int unselectedScale=0x7f01000d;
     }
     public static final class color {
         public static final int actionbar_background_end=0x7f080023;
@@ -176,6 +366,12 @@ containing a value of this type.
         public static final int btom_line=0x7f080020;
         public static final int checkno=0x7f080008;
         public static final int checkyes=0x7f080009;
+        public static final int colorAccent=0x7f080031;
+        public static final int colorPrimary=0x7f08002f;
+        public static final int colorPrimaryDark=0x7f080030;
+        public static final int color_item_bg=0x7f080032;
+        public static final int color_view_bg=0x7f080033;
+        public static final int color_view_btn=0x7f080034;
         public static final int content=0x7f080007;
         public static final int darkgray=0x7f080012;
         public static final int dialog_divider=0x7f08000f;
@@ -188,13 +384,13 @@ containing a value of this type.
         public static final int main_text_color=0x7f080016;
         public static final int out_check_bg=0x7f08000e;
         public static final int plight_text=0x7f08001f;
-        public static final int primary_text_dark=0x7f08002f;
+        public static final int primary_text_dark=0x7f080035;
         public static final int province_line_border=0x7f08002e;
         public static final int purple=0x7f080005;
         public static final int qing=0x7f080003;
         public static final int qq_common_bg=0x7f080027;
         public static final int red=0x7f080000;
-        public static final int secondary_text_dark=0x7f080030;
+        public static final int secondary_text_dark=0x7f080036;
         public static final int select_blue=0x7f080010;
         public static final int system_manager_color=0x7f080018;
         public static final int tab_title=0x7f080019;
@@ -213,67 +409,69 @@ containing a value of this type.
         public static final int actionbar_height=0x7f0a000b;
         public static final int actionbar_item_height=0x7f0a000c;
         public static final int actionbar_item_width=0x7f0a000d;
-        /**  Default screen margins, per the Android Design guidelines. 
-
+        /** 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f0a0014;
-        public static final int activity_vertical_margin=0x7f0a0015;
+        public static final int activity_horizontal_margin=0x7f0a003d;
+        public static final int activity_vertical_margin=0x7f0a003e;
         public static final int activity_zero_margin=0x7f0a000f;
         public static final int body_padding_large=0x7f0a0001;
         /**  Default screen margins, per the Android Design guidelines. 
          */
         public static final int body_padding_medium=0x7f0a0000;
-        public static final int dgv_overlap_if_switch_straight_line=0x7f0a003e;
-        public static final int dp_eleven=0x7f0a0029;
-        public static final int dp_enght=0x7f0a0027;
-        public static final int dp_enghtteen=0x7f0a0028;
-        public static final int dp_firteen=0x7f0a002b;
-        public static final int dp_five=0x7f0a0025;
-        public static final int dp_fivety=0x7f0a002e;
-        public static final int dp_four=0x7f0a0026;
-        public static final int dp_fourteen=0x7f0a0031;
-        public static final int dp_fourty=0x7f0a0030;
-        public static final int dp_fourty_two=0x7f0a0032;
-        public static final int dp_hundred=0x7f0a003b;
-        public static final int dp_one=0x7f0a002a;
-        public static final int dp_six=0x7f0a0024;
+        public static final int dgv_overlap_if_switch_straight_line=0x7f0a003c;
+        public static final int dp_eleven=0x7f0a0027;
+        public static final int dp_enght=0x7f0a0025;
+        public static final int dp_enghtteen=0x7f0a0026;
+        public static final int dp_firteen=0x7f0a0029;
+        public static final int dp_five=0x7f0a0023;
+        public static final int dp_fivety=0x7f0a002c;
+        public static final int dp_four=0x7f0a0024;
+        public static final int dp_fourteen=0x7f0a002f;
+        public static final int dp_fourty=0x7f0a002e;
+        public static final int dp_fourty_two=0x7f0a0030;
+        public static final int dp_hundred=0x7f0a0039;
+        public static final int dp_one=0x7f0a0028;
+        public static final int dp_six=0x7f0a0022;
         /**  recommend 
          */
-        public static final int dp_sixteen=0x7f0a0023;
-        public static final int dp_sixty=0x7f0a002f;
-        public static final int dp_telvel=0x7f0a0033;
-        public static final int dp_ten=0x7f0a002d;
-        public static final int dp_three=0x7f0a0034;
-        public static final int dp_threeteen=0x7f0a002c;
-        public static final int dp_thrity=0x7f0a0038;
-        public static final int dp_thrity_two=0x7f0a0037;
-        public static final int dp_twenty=0x7f0a0036;
-        public static final int dp_ty_four=0x7f0a0035;
-        public static final int img_hight=0x7f0a003a;
-        public static final int img_width=0x7f0a0039;
+        public static final int dp_sixteen=0x7f0a0021;
+        public static final int dp_sixty=0x7f0a002d;
+        public static final int dp_telvel=0x7f0a0031;
+        public static final int dp_ten=0x7f0a002b;
+        public static final int dp_three=0x7f0a0032;
+        public static final int dp_threeteen=0x7f0a002a;
+        public static final int dp_thrity=0x7f0a0036;
+        public static final int dp_thrity_two=0x7f0a0035;
+        public static final int dp_twenty=0x7f0a0034;
+        public static final int dp_ty_four=0x7f0a0033;
+        public static final int fab_margin=0x7f0a003f;
+        public static final int img_hight=0x7f0a0038;
+        public static final int img_width=0x7f0a0037;
         public static final int more_window_item_margin=0x7f0a0002;
-        public static final int register_text=0x7f0a003d;
-        public static final int round_hight=0x7f0a0017;
-        public static final int round_width=0x7f0a0016;
+        public static final int register_text=0x7f0a003b;
+        public static final int round_hight=0x7f0a0015;
+        /**  Default screen margins, per the Android Design guidelines. 
+         */
+        public static final int round_width=0x7f0a0014;
         /**  Default screen margins, per the Android Design guidelines. 
          */
         public static final int slidingmenu_offset=0x7f0a0013;
-        public static final int sp_eighteen=0x7f0a0021;
-        public static final int sp_eleven=0x7f0a001d;
-        public static final int sp_firteen=0x7f0a001e;
-        public static final int sp_forteen=0x7f0a001b;
-        public static final int sp_sixteen=0x7f0a001f;
-        public static final int sp_telvel=0x7f0a001c;
-        public static final int sp_threeteen=0x7f0a0020;
-        public static final int sp_twenty=0x7f0a0019;
-        public static final int sp_twenty_one=0x7f0a001a;
-        public static final int sp_twenty_six=0x7f0a0022;
+        public static final int sp_eighteen=0x7f0a001f;
+        public static final int sp_eleven=0x7f0a001b;
+        public static final int sp_firteen=0x7f0a001c;
+        public static final int sp_forteen=0x7f0a0019;
+        public static final int sp_sixteen=0x7f0a001d;
+        public static final int sp_telvel=0x7f0a001a;
+        public static final int sp_threeteen=0x7f0a001e;
+        public static final int sp_twenty=0x7f0a0017;
+        public static final int sp_twenty_one=0x7f0a0018;
+        public static final int sp_twenty_six=0x7f0a0020;
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int sp_twenty_two=0x7f0a0018;
+        public static final int sp_twenty_two=0x7f0a0016;
         public static final int speaker_image_padding=0x7f0a0008;
         public static final int speaker_image_size=0x7f0a0007;
         public static final int text_font_size_large=0x7f0a0010;
@@ -285,8 +483,9 @@ containing a value of this type.
         public static final int text_size_medium=0x7f0a0004;
         public static final int text_size_small=0x7f0a0003;
         public static final int text_size_xlarge=0x7f0a0006;
-        public static final int text_wight=0x7f0a003c;
+        public static final int text_wight=0x7f0a003a;
         public static final int vendor_image_size=0x7f0a0009;
+        public static final int width=0x7f0a0040;
     }
     public static final class drawable {
         public static final int account=0x7f020000;
@@ -414,582 +613,601 @@ containing a value of this type.
         public static final int image=0x7f02007a;
         public static final int invert_filter=0x7f02007b;
         public static final int ipadress=0x7f02007c;
-        public static final int layout_selector=0x7f02007d;
-        public static final int left=0x7f02007e;
-        public static final int lensflare_filter=0x7f02007f;
-        public static final int light_filter=0x7f020080;
-        public static final int list_background=0x7f020081;
-        public static final int list_bg=0x7f020082;
-        public static final int list_blue_down=0x7f020083;
-        public static final int list_blue_middle=0x7f020084;
-        public static final int list_blue_single=0x7f020085;
-        public static final int list_blue_up=0x7f020086;
-        public static final int list_folder=0x7f020087;
-        public static final int list_footer_bg=0x7f020088;
-        public static final int list_green_down=0x7f020089;
-        public static final int list_green_middle=0x7f02008a;
-        public static final int list_green_single=0x7f02008b;
-        public static final int list_green_up=0x7f02008c;
-        public static final int list_red_down=0x7f02008d;
-        public static final int list_red_middle=0x7f02008e;
-        public static final int list_red_single=0x7f02008f;
-        public static final int list_red_up=0x7f020090;
-        public static final int list_white_down=0x7f020091;
-        public static final int list_white_middle=0x7f020092;
-        public static final int list_white_single=0x7f020093;
-        public static final int list_white_up=0x7f020094;
-        public static final int list_yellow_down=0x7f020095;
-        public static final int list_yellow_middle=0x7f020096;
-        public static final int list_yellow_single=0x7f020097;
-        public static final int list_yellow_up=0x7f020098;
-        public static final int lock_9_view_node_highlighted=0x7f020099;
-        public static final int lock_9_view_node_normal=0x7f02009a;
-        public static final int login_btnbg=0x7f02009b;
-        public static final int logo=0x7f02009c;
-        public static final int mask=0x7f02009d;
-        public static final int menu_delete=0x7f02009e;
-        public static final int menu_move=0x7f02009f;
-        public static final int menuside_selector=0x7f0200a0;
-        public static final int mirror_filter1=0x7f0200a1;
-        public static final int mirror_filter2=0x7f0200a2;
-        public static final int mist_filter=0x7f0200a3;
-        public static final int monitor_filter=0x7f0200a4;
-        public static final int mosaic_filter=0x7f0200a5;
-        public static final int neon_filter=0x7f0200a6;
-        public static final int nightvision_filter=0x7f0200a7;
-        public static final int noisefilter=0x7f0200a8;
-        public static final int note_edit_color_selector_panel=0x7f0200a9;
-        public static final int noteyuy=0x7f0200aa;
-        public static final int oilpaint_filter=0x7f0200ab;
-        public static final int oldphoto_filter=0x7f0200ac;
-        public static final int p_arrow_down=0x7f0200ad;
-        public static final int p_arrow_down_gray=0x7f0200ae;
-        public static final int p_arrow_up_gray=0x7f0200af;
-        public static final int p_loginbtn_normal=0x7f0200b0;
-        public static final int p_loginbtn_press=0x7f0200b1;
-        public static final int phoneadress=0x7f0200b2;
-        public static final int photo_text=0x7f0200b3;
-        public static final int pixelate_filter=0x7f0200b4;
-        public static final int posterize_filter=0x7f0200b5;
-        public static final int progress=0x7f0200b6;
-        public static final int qq_background=0x7f0200b7;
-        public static final int radialdistortion_filter=0x7f0200b8;
-        public static final int rain=0x7f0200b9;
-        public static final int rainbow_filter=0x7f0200ba;
-        public static final int raiseframe_filter=0x7f0200bb;
-        public static final int rectmatrix_filter=0x7f0200bc;
-        public static final int reflection1_filter=0x7f0200bd;
-        public static final int reflection2_filter=0x7f0200be;
-        public static final int relief_filter=0x7f0200bf;
-        public static final int right=0x7f0200c0;
-        public static final int ripple_filter=0x7f0200c1;
-        public static final int saturationmodify_filter=0x7f0200c2;
-        public static final int saturationmodity_filter=0x7f0200c3;
-        public static final int save_dairy=0x7f0200c4;
-        public static final int search_result=0x7f0200c5;
-        public static final int selected=0x7f0200c6;
-        public static final int sepia_filter=0x7f0200c7;
-        public static final int shade=0x7f0200c8;
-        public static final int shadow=0x7f0200c9;
-        public static final int shape_gray_bg=0x7f0200ca;
-        public static final int shape_gray_bg_bottom_round=0x7f0200cb;
-        public static final int shape_gray_bg_dialog=0x7f0200cc;
-        public static final int shape_gray_bg_top_round=0x7f0200cd;
-        public static final int shape_white_bg=0x7f0200ce;
-        public static final int shape_white_bg_bottom_round=0x7f0200cf;
-        public static final int shape_white_bg_top_round=0x7f0200d0;
-        public static final int sharp_filter=0x7f0200d1;
-        public static final int shift_filter=0x7f0200d2;
-        public static final int side_bg=0x7f0200d3;
-        public static final int smashcolor_filter=0x7f0200d4;
-        public static final int snow=0x7f0200d5;
-        public static final int softglow_filter=0x7f0200d6;
-        public static final int ssdk_auth_title_back=0x7f0200d7;
-        public static final int ssdk_back_arr=0x7f0200d8;
-        public static final int ssdk_logo=0x7f0200d9;
-        public static final int ssdk_oks_auth_follow_cb_chd=0x7f0200da;
-        public static final int ssdk_oks_auth_follow_cb_unc=0x7f0200db;
-        public static final int ssdk_oks_auth_title_back=0x7f0200dc;
-        public static final int ssdk_oks_blue_point=0x7f0200dd;
-        public static final int ssdk_oks_btn_back_nor=0x7f0200de;
-        public static final int ssdk_oks_classic_platform_corners_bg=0x7f0200df;
-        public static final int ssdk_oks_edittext_back=0x7f0200e0;
-        public static final int ssdk_oks_img_cancel=0x7f0200e1;
-        public static final int ssdk_oks_light_blue_point=0x7f0200e2;
-        public static final int ssdk_oks_logo_alipay=0x7f0200e3;
-        public static final int ssdk_oks_logo_bluetooth=0x7f0200e4;
-        public static final int ssdk_oks_logo_douban=0x7f0200e5;
-        public static final int ssdk_oks_logo_dropbox=0x7f0200e6;
-        public static final int ssdk_oks_logo_email=0x7f0200e7;
-        public static final int ssdk_oks_logo_evernote=0x7f0200e8;
-        public static final int ssdk_oks_logo_facebook=0x7f0200e9;
-        public static final int ssdk_oks_logo_facebookmessenger=0x7f0200ea;
-        public static final int ssdk_oks_logo_flickr=0x7f0200eb;
-        public static final int ssdk_oks_logo_foursquare=0x7f0200ec;
-        public static final int ssdk_oks_logo_googleplus=0x7f0200ed;
-        public static final int ssdk_oks_logo_instagram=0x7f0200ee;
-        public static final int ssdk_oks_logo_instapaper=0x7f0200ef;
-        public static final int ssdk_oks_logo_kaixin=0x7f0200f0;
-        public static final int ssdk_oks_logo_kakaostory=0x7f0200f1;
-        public static final int ssdk_oks_logo_kakaotalk=0x7f0200f2;
-        public static final int ssdk_oks_logo_laiwang=0x7f0200f3;
-        public static final int ssdk_oks_logo_laiwangmoments=0x7f0200f4;
-        public static final int ssdk_oks_logo_line=0x7f0200f5;
-        public static final int ssdk_oks_logo_linkedin=0x7f0200f6;
-        public static final int ssdk_oks_logo_mingdao=0x7f0200f7;
-        public static final int ssdk_oks_logo_pinterest=0x7f0200f8;
-        public static final int ssdk_oks_logo_pocket=0x7f0200f9;
-        public static final int ssdk_oks_logo_qq=0x7f0200fa;
-        public static final int ssdk_oks_logo_qzone=0x7f0200fb;
-        public static final int ssdk_oks_logo_renren=0x7f0200fc;
-        public static final int ssdk_oks_logo_shortmessage=0x7f0200fd;
-        public static final int ssdk_oks_logo_sinaweibo=0x7f0200fe;
-        public static final int ssdk_oks_logo_sohusuishenkan=0x7f0200ff;
-        public static final int ssdk_oks_logo_tencentweibo=0x7f020100;
-        public static final int ssdk_oks_logo_tumblr=0x7f020101;
-        public static final int ssdk_oks_logo_twitter=0x7f020102;
-        public static final int ssdk_oks_logo_vkontakte=0x7f020103;
-        public static final int ssdk_oks_logo_wechat=0x7f020104;
-        public static final int ssdk_oks_logo_wechatfavorite=0x7f020105;
-        public static final int ssdk_oks_logo_wechatmoments=0x7f020106;
-        public static final int ssdk_oks_logo_whatsapp=0x7f020107;
-        public static final int ssdk_oks_logo_yixin=0x7f020108;
-        public static final int ssdk_oks_logo_yixinmoments=0x7f020109;
-        public static final int ssdk_oks_logo_youdao=0x7f02010a;
-        public static final int ssdk_oks_pin=0x7f02010b;
-        public static final int ssdk_oks_ptr_ptr=0x7f02010c;
-        public static final int ssdk_oks_shake_to_share_back=0x7f02010d;
-        public static final int ssdk_oks_skyblue_actionbar_back_btn=0x7f02010e;
-        public static final int ssdk_oks_skyblue_actionbar_ok_btn=0x7f02010f;
-        public static final int ssdk_oks_skyblue_editpage_bg=0x7f020110;
-        public static final int ssdk_oks_skyblue_editpage_close=0x7f020111;
-        public static final int ssdk_oks_skyblue_editpage_divider=0x7f020112;
-        public static final int ssdk_oks_skyblue_editpage_image_bg=0x7f020113;
-        public static final int ssdk_oks_skyblue_editpage_image_remove=0x7f020114;
-        public static final int ssdk_oks_skyblue_logo_alipayshare=0x7f020115;
-        public static final int ssdk_oks_skyblue_logo_alipayshare_checked=0x7f020116;
-        public static final int ssdk_oks_skyblue_logo_baidutieba=0x7f020117;
-        public static final int ssdk_oks_skyblue_logo_baidutieba_checked=0x7f020118;
-        public static final int ssdk_oks_skyblue_logo_bluetooth=0x7f020119;
-        public static final int ssdk_oks_skyblue_logo_bluetooth_checked=0x7f02011a;
-        public static final int ssdk_oks_skyblue_logo_douban=0x7f02011b;
-        public static final int ssdk_oks_skyblue_logo_douban_checked=0x7f02011c;
-        public static final int ssdk_oks_skyblue_logo_dropbox=0x7f02011d;
-        public static final int ssdk_oks_skyblue_logo_dropbox_checked=0x7f02011e;
-        public static final int ssdk_oks_skyblue_logo_email=0x7f02011f;
-        public static final int ssdk_oks_skyblue_logo_email_checked=0x7f020120;
-        public static final int ssdk_oks_skyblue_logo_evernote=0x7f020121;
-        public static final int ssdk_oks_skyblue_logo_evernote_checked=0x7f020122;
-        public static final int ssdk_oks_skyblue_logo_facebook=0x7f020123;
-        public static final int ssdk_oks_skyblue_logo_facebook_checked=0x7f020124;
-        public static final int ssdk_oks_skyblue_logo_facebookmessenger=0x7f020125;
-        public static final int ssdk_oks_skyblue_logo_facebookmessenger_checked=0x7f020126;
-        public static final int ssdk_oks_skyblue_logo_flickr=0x7f020127;
-        public static final int ssdk_oks_skyblue_logo_flickr_checked=0x7f020128;
-        public static final int ssdk_oks_skyblue_logo_foursquare=0x7f020129;
-        public static final int ssdk_oks_skyblue_logo_foursquare_checked=0x7f02012a;
-        public static final int ssdk_oks_skyblue_logo_googleplus=0x7f02012b;
-        public static final int ssdk_oks_skyblue_logo_googleplus_checked=0x7f02012c;
-        public static final int ssdk_oks_skyblue_logo_instagram=0x7f02012d;
-        public static final int ssdk_oks_skyblue_logo_instagram_checked=0x7f02012e;
-        public static final int ssdk_oks_skyblue_logo_instapaper=0x7f02012f;
-        public static final int ssdk_oks_skyblue_logo_instapaper_checked=0x7f020130;
-        public static final int ssdk_oks_skyblue_logo_kaixin=0x7f020131;
-        public static final int ssdk_oks_skyblue_logo_kaixin_checked=0x7f020132;
-        public static final int ssdk_oks_skyblue_logo_kakaostory=0x7f020133;
-        public static final int ssdk_oks_skyblue_logo_kakaostory_checked=0x7f020134;
-        public static final int ssdk_oks_skyblue_logo_kakaotalk=0x7f020135;
-        public static final int ssdk_oks_skyblue_logo_kakaotalk_checked=0x7f020136;
-        public static final int ssdk_oks_skyblue_logo_laiwangmoments=0x7f020137;
-        public static final int ssdk_oks_skyblue_logo_laiwangmoments_checked=0x7f020138;
-        public static final int ssdk_oks_skyblue_logo_line=0x7f020139;
-        public static final int ssdk_oks_skyblue_logo_line_checked=0x7f02013a;
-        public static final int ssdk_oks_skyblue_logo_linkedin=0x7f02013b;
-        public static final int ssdk_oks_skyblue_logo_linkedin_checked=0x7f02013c;
-        public static final int ssdk_oks_skyblue_logo_mingdao=0x7f02013d;
-        public static final int ssdk_oks_skyblue_logo_mingdao_checked=0x7f02013e;
-        public static final int ssdk_oks_skyblue_logo_neteasemicroblog=0x7f02013f;
-        public static final int ssdk_oks_skyblue_logo_neteasemicroblog_checked=0x7f020140;
-        public static final int ssdk_oks_skyblue_logo_pinterest=0x7f020141;
-        public static final int ssdk_oks_skyblue_logo_pinterest_checked=0x7f020142;
-        public static final int ssdk_oks_skyblue_logo_pocket=0x7f020143;
-        public static final int ssdk_oks_skyblue_logo_pocket_checked=0x7f020144;
-        public static final int ssdk_oks_skyblue_logo_qq=0x7f020145;
-        public static final int ssdk_oks_skyblue_logo_qq_checked=0x7f020146;
-        public static final int ssdk_oks_skyblue_logo_qzone=0x7f020147;
-        public static final int ssdk_oks_skyblue_logo_qzone_checked=0x7f020148;
-        public static final int ssdk_oks_skyblue_logo_renren=0x7f020149;
-        public static final int ssdk_oks_skyblue_logo_renren_checked=0x7f02014a;
-        public static final int ssdk_oks_skyblue_logo_shortmessage=0x7f02014b;
-        public static final int ssdk_oks_skyblue_logo_shortmessage_checked=0x7f02014c;
-        public static final int ssdk_oks_skyblue_logo_sinaweibo=0x7f02014d;
-        public static final int ssdk_oks_skyblue_logo_sinaweibo_checked=0x7f02014e;
-        public static final int ssdk_oks_skyblue_logo_sohumicroblog=0x7f02014f;
-        public static final int ssdk_oks_skyblue_logo_sohumicroblog_checked=0x7f020150;
-        public static final int ssdk_oks_skyblue_logo_sohusuishenkan=0x7f020151;
-        public static final int ssdk_oks_skyblue_logo_sohusuishenkan_checked=0x7f020152;
-        public static final int ssdk_oks_skyblue_logo_tencentweibo=0x7f020153;
-        public static final int ssdk_oks_skyblue_logo_tencentweibo_checked=0x7f020154;
-        public static final int ssdk_oks_skyblue_logo_tumblr=0x7f020155;
-        public static final int ssdk_oks_skyblue_logo_tumblr_checked=0x7f020156;
-        public static final int ssdk_oks_skyblue_logo_twitter=0x7f020157;
-        public static final int ssdk_oks_skyblue_logo_twitter_checked=0x7f020158;
-        public static final int ssdk_oks_skyblue_logo_vkontakte=0x7f020159;
-        public static final int ssdk_oks_skyblue_logo_vkontakte_checked=0x7f02015a;
-        public static final int ssdk_oks_skyblue_logo_wechat=0x7f02015b;
-        public static final int ssdk_oks_skyblue_logo_wechat_checked=0x7f02015c;
-        public static final int ssdk_oks_skyblue_logo_wechatfavorite=0x7f02015d;
-        public static final int ssdk_oks_skyblue_logo_wechatfavorite_checked=0x7f02015e;
-        public static final int ssdk_oks_skyblue_logo_wechatmoments=0x7f02015f;
-        public static final int ssdk_oks_skyblue_logo_wechatmoments_checked=0x7f020160;
-        public static final int ssdk_oks_skyblue_logo_whatsapp=0x7f020161;
-        public static final int ssdk_oks_skyblue_logo_whatsapp_checked=0x7f020162;
-        public static final int ssdk_oks_skyblue_logo_yixin=0x7f020163;
-        public static final int ssdk_oks_skyblue_logo_yixin_checked=0x7f020164;
-        public static final int ssdk_oks_skyblue_logo_yixinmoments=0x7f020165;
-        public static final int ssdk_oks_skyblue_logo_yixinmoments_checked=0x7f020166;
-        public static final int ssdk_oks_skyblue_logo_youdao=0x7f020167;
-        public static final int ssdk_oks_skyblue_logo_youdao_checked=0x7f020168;
-        public static final int ssdk_oks_skyblue_platform_checked=0x7f020169;
-        public static final int ssdk_oks_skyblue_platform_checked_disabled=0x7f02016a;
-        public static final int ssdk_oks_skyblue_platform_list_item=0x7f02016b;
-        public static final int ssdk_oks_skyblue_platform_list_item_selected=0x7f02016c;
-        public static final int ssdk_oks_skyblue_platform_list_selector=0x7f02016d;
-        public static final int ssdk_oks_title_back=0x7f02016e;
-        public static final int ssdk_oks_title_shadow=0x7f02016f;
-        public static final int ssdk_oks_yaoyiyao=0x7f020170;
-        public static final int ssdk_title_div=0x7f020171;
-        public static final int stroke=0x7f020172;
-        public static final int supernova_filter=0x7f020173;
-        public static final int tab_widget=0x7f020174;
-        public static final int tab_widget2=0x7f020175;
-        public static final int tabbar_compose_background_icon_close=0x7f020176;
-        public static final int tablebar_bg=0x7f020177;
-        public static final int texture1=0x7f020178;
-        public static final int texture2=0x7f020179;
-        public static final int texturer_filter=0x7f02017a;
-        public static final int texturer_filter1=0x7f02017b;
-        public static final int texturer_filter2=0x7f02017c;
-        public static final int texturer_filter3=0x7f02017d;
-        public static final int texturer_filter4=0x7f02017e;
-        public static final int threedgrid_filter=0x7f02017f;
-        public static final int threshold_filter=0x7f020180;
-        public static final int thundershower=0x7f020181;
-        public static final int tilereflection_filter=0x7f020182;
-        public static final int tilereflection_filter1=0x7f020183;
-        public static final int tilereflection_filter2=0x7f020184;
-        public static final int tint_filter=0x7f020185;
-        public static final int title_alert=0x7f020186;
-        public static final int toast_actionsheet_bottom_normal=0x7f020187;
-        public static final int toast_actionsheet_bottom_pressed=0x7f020188;
-        public static final int toast_actionsheet_middle_normal=0x7f020189;
-        public static final int toast_actionsheet_middle_pressed=0x7f02018a;
-        public static final int toast_actionsheet_single_normal=0x7f02018b;
-        public static final int toast_actionsheet_single_pressed=0x7f02018c;
-        public static final int toast_actionsheet_top_normal=0x7f02018d;
-        public static final int toast_actionsheet_top_pressed=0x7f02018e;
-        public static final int toast_alert_bg=0x7f02018f;
-        public static final int toast_alert_btn_left_pressed=0x7f020190;
-        public static final int toast_alert_btn_right_pressed=0x7f020191;
-        public static final int toast_alert_btn_single_pressed=0x7f020192;
-        public static final int toast_trans_bg=0x7f020193;
-        public static final int topbar_menu_left=0x7f020194;
-        public static final int treestable=0x7f020195;
-        public static final int turnplate_bg_right=0x7f020196;
-        public static final int turnplate_mask_unlogin=0x7f020197;
-        public static final int turnplate_mask_unlogin_click=0x7f020198;
-        public static final int turnplate_mask_unlogin_normal=0x7f020199;
-        public static final int twist_filter=0x7f02019a;
-        public static final int type_big_1=0x7f02019b;
-        public static final int type_big_10=0x7f02019c;
-        public static final int type_big_11=0x7f02019d;
-        public static final int type_big_12=0x7f02019e;
-        public static final int type_big_13=0x7f02019f;
-        public static final int type_big_14=0x7f0201a0;
-        public static final int type_big_15=0x7f0201a1;
-        public static final int type_big_16=0x7f0201a2;
-        public static final int type_big_17=0x7f0201a3;
-        public static final int type_big_18=0x7f0201a4;
-        public static final int type_big_19=0x7f0201a5;
-        public static final int type_big_2=0x7f0201a6;
-        public static final int type_big_3=0x7f0201a7;
-        public static final int type_big_4=0x7f0201a8;
-        public static final int type_big_5=0x7f0201a9;
-        public static final int type_big_6=0x7f0201aa;
-        public static final int type_big_7=0x7f0201ab;
-        public static final int type_big_8=0x7f0201ac;
-        public static final int type_big_9=0x7f0201ad;
-        public static final int video_filter1=0x7f0201ae;
-        public static final int video_filter2=0x7f0201af;
-        public static final int video_filter3=0x7f0201b0;
-        public static final int video_filter4=0x7f0201b1;
-        public static final int viewbg_more=0x7f0201b2;
-        public static final int vignette_filter=0x7f0201b3;
-        public static final int vintage_filter=0x7f0201b4;
-        public static final int waterwave_filter=0x7f0201b5;
-        public static final int wave_filter=0x7f0201b6;
-        public static final int webaccount=0x7f0201b7;
-        public static final int wenb=0x7f0201b8;
-        public static final int wheel_bg=0x7f0201b9;
-        public static final int wheel_val=0x7f0201ba;
-        public static final int white=0x7f0201bb;
-        public static final int widget_2x_blue=0x7f0201bc;
-        public static final int widget_2x_green=0x7f0201bd;
-        public static final int widget_2x_red=0x7f0201be;
-        public static final int widget_2x_white=0x7f0201bf;
-        public static final int widget_2x_yellow=0x7f0201c0;
-        public static final int widget_4x_blue=0x7f0201c1;
-        public static final int widget_4x_green=0x7f0201c2;
-        public static final int widget_4x_red=0x7f0201c3;
-        public static final int widget_4x_white=0x7f0201c4;
-        public static final int widget_4x_yellow=0x7f0201c5;
-        public static final int xingzuoyunshi=0x7f0201c6;
-        public static final int xradiation_filter=0x7f0201c7;
-        public static final int ycb_crlinear_filter=0x7f0201c8;
-        public static final int ycb_crlinear_filter2=0x7f0201c9;
-        public static final int youxiang=0x7f0201ca;
-        public static final int zoomblur_filter=0x7f0201cb;
+        public static final int item_bg=0x7f02007d;
+        public static final int item_btn_bg=0x7f02007e;
+        public static final int layout_selector=0x7f02007f;
+        public static final int left=0x7f020080;
+        public static final int lensflare_filter=0x7f020081;
+        public static final int light_filter=0x7f020082;
+        public static final int list_background=0x7f020083;
+        public static final int list_bg=0x7f020084;
+        public static final int list_blue_down=0x7f020085;
+        public static final int list_blue_middle=0x7f020086;
+        public static final int list_blue_single=0x7f020087;
+        public static final int list_blue_up=0x7f020088;
+        public static final int list_folder=0x7f020089;
+        public static final int list_footer_bg=0x7f02008a;
+        public static final int list_green_down=0x7f02008b;
+        public static final int list_green_middle=0x7f02008c;
+        public static final int list_green_single=0x7f02008d;
+        public static final int list_green_up=0x7f02008e;
+        public static final int list_red_down=0x7f02008f;
+        public static final int list_red_middle=0x7f020090;
+        public static final int list_red_single=0x7f020091;
+        public static final int list_red_up=0x7f020092;
+        public static final int list_white_down=0x7f020093;
+        public static final int list_white_middle=0x7f020094;
+        public static final int list_white_single=0x7f020095;
+        public static final int list_white_up=0x7f020096;
+        public static final int list_yellow_down=0x7f020097;
+        public static final int list_yellow_middle=0x7f020098;
+        public static final int list_yellow_single=0x7f020099;
+        public static final int list_yellow_up=0x7f02009a;
+        public static final int lock_9_view_node_highlighted=0x7f02009b;
+        public static final int lock_9_view_node_normal=0x7f02009c;
+        public static final int login_btnbg=0x7f02009d;
+        public static final int logo=0x7f02009e;
+        public static final int mask=0x7f02009f;
+        public static final int meinv1=0x7f0200a0;
+        public static final int menu_delete=0x7f0200a1;
+        public static final int menu_move=0x7f0200a2;
+        public static final int menuside_selector=0x7f0200a3;
+        public static final int mirror_filter1=0x7f0200a4;
+        public static final int mirror_filter2=0x7f0200a5;
+        public static final int mist_filter=0x7f0200a6;
+        public static final int monitor_filter=0x7f0200a7;
+        public static final int mosaic_filter=0x7f0200a8;
+        public static final int neon_filter=0x7f0200a9;
+        public static final int nightvision_filter=0x7f0200aa;
+        public static final int noisefilter=0x7f0200ab;
+        public static final int note_edit_color_selector_panel=0x7f0200ac;
+        public static final int noteyuy=0x7f0200ad;
+        public static final int oilpaint_filter=0x7f0200ae;
+        public static final int oldphoto_filter=0x7f0200af;
+        public static final int p_arrow_down=0x7f0200b0;
+        public static final int p_arrow_down_gray=0x7f0200b1;
+        public static final int p_arrow_up_gray=0x7f0200b2;
+        public static final int p_loginbtn_normal=0x7f0200b3;
+        public static final int p_loginbtn_press=0x7f0200b4;
+        public static final int phoneadress=0x7f0200b5;
+        public static final int photo_text=0x7f0200b6;
+        public static final int pixelate_filter=0x7f0200b7;
+        public static final int posterize_filter=0x7f0200b8;
+        public static final int progress=0x7f0200b9;
+        public static final int qq_background=0x7f0200ba;
+        public static final int radialdistortion_filter=0x7f0200bb;
+        public static final int rain=0x7f0200bc;
+        public static final int rainbow_filter=0x7f0200bd;
+        public static final int raiseframe_filter=0x7f0200be;
+        public static final int rectmatrix_filter=0x7f0200bf;
+        public static final int reflection1_filter=0x7f0200c0;
+        public static final int reflection2_filter=0x7f0200c1;
+        public static final int relief_filter=0x7f0200c2;
+        public static final int right=0x7f0200c3;
+        public static final int ripple_filter=0x7f0200c4;
+        public static final int saturationmodify_filter=0x7f0200c5;
+        public static final int saturationmodity_filter=0x7f0200c6;
+        public static final int save_dairy=0x7f0200c7;
+        public static final int search_result=0x7f0200c8;
+        public static final int selected=0x7f0200c9;
+        public static final int sepia_filter=0x7f0200ca;
+        public static final int shade=0x7f0200cb;
+        public static final int shadow=0x7f0200cc;
+        public static final int shape_gray_bg=0x7f0200cd;
+        public static final int shape_gray_bg_bottom_round=0x7f0200ce;
+        public static final int shape_gray_bg_dialog=0x7f0200cf;
+        public static final int shape_gray_bg_top_round=0x7f0200d0;
+        public static final int shape_white_bg=0x7f0200d1;
+        public static final int shape_white_bg_bottom_round=0x7f0200d2;
+        public static final int shape_white_bg_top_round=0x7f0200d3;
+        public static final int sharp_filter=0x7f0200d4;
+        public static final int shift_filter=0x7f0200d5;
+        public static final int side_bg=0x7f0200d6;
+        public static final int smashcolor_filter=0x7f0200d7;
+        public static final int snow=0x7f0200d8;
+        public static final int softglow_filter=0x7f0200d9;
+        public static final int ssdk_auth_title_back=0x7f0200da;
+        public static final int ssdk_back_arr=0x7f0200db;
+        public static final int ssdk_logo=0x7f0200dc;
+        public static final int ssdk_oks_auth_follow_cb_chd=0x7f0200dd;
+        public static final int ssdk_oks_auth_follow_cb_unc=0x7f0200de;
+        public static final int ssdk_oks_auth_title_back=0x7f0200df;
+        public static final int ssdk_oks_blue_point=0x7f0200e0;
+        public static final int ssdk_oks_btn_back_nor=0x7f0200e1;
+        public static final int ssdk_oks_classic_platform_corners_bg=0x7f0200e2;
+        public static final int ssdk_oks_edittext_back=0x7f0200e3;
+        public static final int ssdk_oks_img_cancel=0x7f0200e4;
+        public static final int ssdk_oks_light_blue_point=0x7f0200e5;
+        public static final int ssdk_oks_logo_alipay=0x7f0200e6;
+        public static final int ssdk_oks_logo_bluetooth=0x7f0200e7;
+        public static final int ssdk_oks_logo_douban=0x7f0200e8;
+        public static final int ssdk_oks_logo_dropbox=0x7f0200e9;
+        public static final int ssdk_oks_logo_email=0x7f0200ea;
+        public static final int ssdk_oks_logo_evernote=0x7f0200eb;
+        public static final int ssdk_oks_logo_facebook=0x7f0200ec;
+        public static final int ssdk_oks_logo_facebookmessenger=0x7f0200ed;
+        public static final int ssdk_oks_logo_flickr=0x7f0200ee;
+        public static final int ssdk_oks_logo_foursquare=0x7f0200ef;
+        public static final int ssdk_oks_logo_googleplus=0x7f0200f0;
+        public static final int ssdk_oks_logo_instagram=0x7f0200f1;
+        public static final int ssdk_oks_logo_instapaper=0x7f0200f2;
+        public static final int ssdk_oks_logo_kaixin=0x7f0200f3;
+        public static final int ssdk_oks_logo_kakaostory=0x7f0200f4;
+        public static final int ssdk_oks_logo_kakaotalk=0x7f0200f5;
+        public static final int ssdk_oks_logo_laiwang=0x7f0200f6;
+        public static final int ssdk_oks_logo_laiwangmoments=0x7f0200f7;
+        public static final int ssdk_oks_logo_line=0x7f0200f8;
+        public static final int ssdk_oks_logo_linkedin=0x7f0200f9;
+        public static final int ssdk_oks_logo_mingdao=0x7f0200fa;
+        public static final int ssdk_oks_logo_pinterest=0x7f0200fb;
+        public static final int ssdk_oks_logo_pocket=0x7f0200fc;
+        public static final int ssdk_oks_logo_qq=0x7f0200fd;
+        public static final int ssdk_oks_logo_qzone=0x7f0200fe;
+        public static final int ssdk_oks_logo_renren=0x7f0200ff;
+        public static final int ssdk_oks_logo_shortmessage=0x7f020100;
+        public static final int ssdk_oks_logo_sinaweibo=0x7f020101;
+        public static final int ssdk_oks_logo_sohusuishenkan=0x7f020102;
+        public static final int ssdk_oks_logo_tencentweibo=0x7f020103;
+        public static final int ssdk_oks_logo_tumblr=0x7f020104;
+        public static final int ssdk_oks_logo_twitter=0x7f020105;
+        public static final int ssdk_oks_logo_vkontakte=0x7f020106;
+        public static final int ssdk_oks_logo_wechat=0x7f020107;
+        public static final int ssdk_oks_logo_wechatfavorite=0x7f020108;
+        public static final int ssdk_oks_logo_wechatmoments=0x7f020109;
+        public static final int ssdk_oks_logo_whatsapp=0x7f02010a;
+        public static final int ssdk_oks_logo_yixin=0x7f02010b;
+        public static final int ssdk_oks_logo_yixinmoments=0x7f02010c;
+        public static final int ssdk_oks_logo_youdao=0x7f02010d;
+        public static final int ssdk_oks_pin=0x7f02010e;
+        public static final int ssdk_oks_ptr_ptr=0x7f02010f;
+        public static final int ssdk_oks_shake_to_share_back=0x7f020110;
+        public static final int ssdk_oks_skyblue_actionbar_back_btn=0x7f020111;
+        public static final int ssdk_oks_skyblue_actionbar_ok_btn=0x7f020112;
+        public static final int ssdk_oks_skyblue_editpage_bg=0x7f020113;
+        public static final int ssdk_oks_skyblue_editpage_close=0x7f020114;
+        public static final int ssdk_oks_skyblue_editpage_divider=0x7f020115;
+        public static final int ssdk_oks_skyblue_editpage_image_bg=0x7f020116;
+        public static final int ssdk_oks_skyblue_editpage_image_remove=0x7f020117;
+        public static final int ssdk_oks_skyblue_logo_alipayshare=0x7f020118;
+        public static final int ssdk_oks_skyblue_logo_alipayshare_checked=0x7f020119;
+        public static final int ssdk_oks_skyblue_logo_baidutieba=0x7f02011a;
+        public static final int ssdk_oks_skyblue_logo_baidutieba_checked=0x7f02011b;
+        public static final int ssdk_oks_skyblue_logo_bluetooth=0x7f02011c;
+        public static final int ssdk_oks_skyblue_logo_bluetooth_checked=0x7f02011d;
+        public static final int ssdk_oks_skyblue_logo_douban=0x7f02011e;
+        public static final int ssdk_oks_skyblue_logo_douban_checked=0x7f02011f;
+        public static final int ssdk_oks_skyblue_logo_dropbox=0x7f020120;
+        public static final int ssdk_oks_skyblue_logo_dropbox_checked=0x7f020121;
+        public static final int ssdk_oks_skyblue_logo_email=0x7f020122;
+        public static final int ssdk_oks_skyblue_logo_email_checked=0x7f020123;
+        public static final int ssdk_oks_skyblue_logo_evernote=0x7f020124;
+        public static final int ssdk_oks_skyblue_logo_evernote_checked=0x7f020125;
+        public static final int ssdk_oks_skyblue_logo_facebook=0x7f020126;
+        public static final int ssdk_oks_skyblue_logo_facebook_checked=0x7f020127;
+        public static final int ssdk_oks_skyblue_logo_facebookmessenger=0x7f020128;
+        public static final int ssdk_oks_skyblue_logo_facebookmessenger_checked=0x7f020129;
+        public static final int ssdk_oks_skyblue_logo_flickr=0x7f02012a;
+        public static final int ssdk_oks_skyblue_logo_flickr_checked=0x7f02012b;
+        public static final int ssdk_oks_skyblue_logo_foursquare=0x7f02012c;
+        public static final int ssdk_oks_skyblue_logo_foursquare_checked=0x7f02012d;
+        public static final int ssdk_oks_skyblue_logo_googleplus=0x7f02012e;
+        public static final int ssdk_oks_skyblue_logo_googleplus_checked=0x7f02012f;
+        public static final int ssdk_oks_skyblue_logo_instagram=0x7f020130;
+        public static final int ssdk_oks_skyblue_logo_instagram_checked=0x7f020131;
+        public static final int ssdk_oks_skyblue_logo_instapaper=0x7f020132;
+        public static final int ssdk_oks_skyblue_logo_instapaper_checked=0x7f020133;
+        public static final int ssdk_oks_skyblue_logo_kaixin=0x7f020134;
+        public static final int ssdk_oks_skyblue_logo_kaixin_checked=0x7f020135;
+        public static final int ssdk_oks_skyblue_logo_kakaostory=0x7f020136;
+        public static final int ssdk_oks_skyblue_logo_kakaostory_checked=0x7f020137;
+        public static final int ssdk_oks_skyblue_logo_kakaotalk=0x7f020138;
+        public static final int ssdk_oks_skyblue_logo_kakaotalk_checked=0x7f020139;
+        public static final int ssdk_oks_skyblue_logo_laiwangmoments=0x7f02013a;
+        public static final int ssdk_oks_skyblue_logo_laiwangmoments_checked=0x7f02013b;
+        public static final int ssdk_oks_skyblue_logo_line=0x7f02013c;
+        public static final int ssdk_oks_skyblue_logo_line_checked=0x7f02013d;
+        public static final int ssdk_oks_skyblue_logo_linkedin=0x7f02013e;
+        public static final int ssdk_oks_skyblue_logo_linkedin_checked=0x7f02013f;
+        public static final int ssdk_oks_skyblue_logo_mingdao=0x7f020140;
+        public static final int ssdk_oks_skyblue_logo_mingdao_checked=0x7f020141;
+        public static final int ssdk_oks_skyblue_logo_neteasemicroblog=0x7f020142;
+        public static final int ssdk_oks_skyblue_logo_neteasemicroblog_checked=0x7f020143;
+        public static final int ssdk_oks_skyblue_logo_pinterest=0x7f020144;
+        public static final int ssdk_oks_skyblue_logo_pinterest_checked=0x7f020145;
+        public static final int ssdk_oks_skyblue_logo_pocket=0x7f020146;
+        public static final int ssdk_oks_skyblue_logo_pocket_checked=0x7f020147;
+        public static final int ssdk_oks_skyblue_logo_qq=0x7f020148;
+        public static final int ssdk_oks_skyblue_logo_qq_checked=0x7f020149;
+        public static final int ssdk_oks_skyblue_logo_qzone=0x7f02014a;
+        public static final int ssdk_oks_skyblue_logo_qzone_checked=0x7f02014b;
+        public static final int ssdk_oks_skyblue_logo_renren=0x7f02014c;
+        public static final int ssdk_oks_skyblue_logo_renren_checked=0x7f02014d;
+        public static final int ssdk_oks_skyblue_logo_shortmessage=0x7f02014e;
+        public static final int ssdk_oks_skyblue_logo_shortmessage_checked=0x7f02014f;
+        public static final int ssdk_oks_skyblue_logo_sinaweibo=0x7f020150;
+        public static final int ssdk_oks_skyblue_logo_sinaweibo_checked=0x7f020151;
+        public static final int ssdk_oks_skyblue_logo_sohumicroblog=0x7f020152;
+        public static final int ssdk_oks_skyblue_logo_sohumicroblog_checked=0x7f020153;
+        public static final int ssdk_oks_skyblue_logo_sohusuishenkan=0x7f020154;
+        public static final int ssdk_oks_skyblue_logo_sohusuishenkan_checked=0x7f020155;
+        public static final int ssdk_oks_skyblue_logo_tencentweibo=0x7f020156;
+        public static final int ssdk_oks_skyblue_logo_tencentweibo_checked=0x7f020157;
+        public static final int ssdk_oks_skyblue_logo_tumblr=0x7f020158;
+        public static final int ssdk_oks_skyblue_logo_tumblr_checked=0x7f020159;
+        public static final int ssdk_oks_skyblue_logo_twitter=0x7f02015a;
+        public static final int ssdk_oks_skyblue_logo_twitter_checked=0x7f02015b;
+        public static final int ssdk_oks_skyblue_logo_vkontakte=0x7f02015c;
+        public static final int ssdk_oks_skyblue_logo_vkontakte_checked=0x7f02015d;
+        public static final int ssdk_oks_skyblue_logo_wechat=0x7f02015e;
+        public static final int ssdk_oks_skyblue_logo_wechat_checked=0x7f02015f;
+        public static final int ssdk_oks_skyblue_logo_wechatfavorite=0x7f020160;
+        public static final int ssdk_oks_skyblue_logo_wechatfavorite_checked=0x7f020161;
+        public static final int ssdk_oks_skyblue_logo_wechatmoments=0x7f020162;
+        public static final int ssdk_oks_skyblue_logo_wechatmoments_checked=0x7f020163;
+        public static final int ssdk_oks_skyblue_logo_whatsapp=0x7f020164;
+        public static final int ssdk_oks_skyblue_logo_whatsapp_checked=0x7f020165;
+        public static final int ssdk_oks_skyblue_logo_yixin=0x7f020166;
+        public static final int ssdk_oks_skyblue_logo_yixin_checked=0x7f020167;
+        public static final int ssdk_oks_skyblue_logo_yixinmoments=0x7f020168;
+        public static final int ssdk_oks_skyblue_logo_yixinmoments_checked=0x7f020169;
+        public static final int ssdk_oks_skyblue_logo_youdao=0x7f02016a;
+        public static final int ssdk_oks_skyblue_logo_youdao_checked=0x7f02016b;
+        public static final int ssdk_oks_skyblue_platform_checked=0x7f02016c;
+        public static final int ssdk_oks_skyblue_platform_checked_disabled=0x7f02016d;
+        public static final int ssdk_oks_skyblue_platform_list_item=0x7f02016e;
+        public static final int ssdk_oks_skyblue_platform_list_item_selected=0x7f02016f;
+        public static final int ssdk_oks_skyblue_platform_list_selector=0x7f020170;
+        public static final int ssdk_oks_title_back=0x7f020171;
+        public static final int ssdk_oks_title_shadow=0x7f020172;
+        public static final int ssdk_oks_yaoyiyao=0x7f020173;
+        public static final int ssdk_title_div=0x7f020174;
+        public static final int stroke=0x7f020175;
+        public static final int supernova_filter=0x7f020176;
+        public static final int tab_widget=0x7f020177;
+        public static final int tab_widget2=0x7f020178;
+        public static final int tabbar_compose_background_icon_close=0x7f020179;
+        public static final int tablebar_bg=0x7f02017a;
+        public static final int texture1=0x7f02017b;
+        public static final int texture2=0x7f02017c;
+        public static final int texturer_filter=0x7f02017d;
+        public static final int texturer_filter1=0x7f02017e;
+        public static final int texturer_filter2=0x7f02017f;
+        public static final int texturer_filter3=0x7f020180;
+        public static final int texturer_filter4=0x7f020181;
+        public static final int threedgrid_filter=0x7f020182;
+        public static final int threshold_filter=0x7f020183;
+        public static final int thundershower=0x7f020184;
+        public static final int tilereflection_filter=0x7f020185;
+        public static final int tilereflection_filter1=0x7f020186;
+        public static final int tilereflection_filter2=0x7f020187;
+        public static final int tint_filter=0x7f020188;
+        public static final int title_alert=0x7f020189;
+        public static final int toast_actionsheet_bottom_normal=0x7f02018a;
+        public static final int toast_actionsheet_bottom_pressed=0x7f02018b;
+        public static final int toast_actionsheet_middle_normal=0x7f02018c;
+        public static final int toast_actionsheet_middle_pressed=0x7f02018d;
+        public static final int toast_actionsheet_single_normal=0x7f02018e;
+        public static final int toast_actionsheet_single_pressed=0x7f02018f;
+        public static final int toast_actionsheet_top_normal=0x7f020190;
+        public static final int toast_actionsheet_top_pressed=0x7f020191;
+        public static final int toast_alert_bg=0x7f020192;
+        public static final int toast_alert_btn_left_pressed=0x7f020193;
+        public static final int toast_alert_btn_right_pressed=0x7f020194;
+        public static final int toast_alert_btn_single_pressed=0x7f020195;
+        public static final int toast_trans_bg=0x7f020196;
+        public static final int topbar_menu_left=0x7f020197;
+        public static final int treestable=0x7f020198;
+        public static final int turnplate_bg_right=0x7f020199;
+        public static final int turnplate_mask_unlogin=0x7f02019a;
+        public static final int turnplate_mask_unlogin_click=0x7f02019b;
+        public static final int turnplate_mask_unlogin_normal=0x7f02019c;
+        public static final int twist_filter=0x7f02019d;
+        public static final int type_big_1=0x7f02019e;
+        public static final int type_big_10=0x7f02019f;
+        public static final int type_big_11=0x7f0201a0;
+        public static final int type_big_12=0x7f0201a1;
+        public static final int type_big_13=0x7f0201a2;
+        public static final int type_big_14=0x7f0201a3;
+        public static final int type_big_15=0x7f0201a4;
+        public static final int type_big_16=0x7f0201a5;
+        public static final int type_big_17=0x7f0201a6;
+        public static final int type_big_18=0x7f0201a7;
+        public static final int type_big_19=0x7f0201a8;
+        public static final int type_big_2=0x7f0201a9;
+        public static final int type_big_3=0x7f0201aa;
+        public static final int type_big_4=0x7f0201ab;
+        public static final int type_big_5=0x7f0201ac;
+        public static final int type_big_6=0x7f0201ad;
+        public static final int type_big_7=0x7f0201ae;
+        public static final int type_big_8=0x7f0201af;
+        public static final int type_big_9=0x7f0201b0;
+        public static final int video_filter1=0x7f0201b1;
+        public static final int video_filter2=0x7f0201b2;
+        public static final int video_filter3=0x7f0201b3;
+        public static final int video_filter4=0x7f0201b4;
+        public static final int viewbg_more=0x7f0201b5;
+        public static final int vignette_filter=0x7f0201b6;
+        public static final int vintage_filter=0x7f0201b7;
+        public static final int waterwave_filter=0x7f0201b8;
+        public static final int wave_filter=0x7f0201b9;
+        public static final int webaccount=0x7f0201ba;
+        public static final int wenb=0x7f0201bb;
+        public static final int wheel_bg=0x7f0201bc;
+        public static final int wheel_val=0x7f0201bd;
+        public static final int white=0x7f0201be;
+        public static final int widget_2x_blue=0x7f0201bf;
+        public static final int widget_2x_green=0x7f0201c0;
+        public static final int widget_2x_red=0x7f0201c1;
+        public static final int widget_2x_white=0x7f0201c2;
+        public static final int widget_2x_yellow=0x7f0201c3;
+        public static final int widget_4x_blue=0x7f0201c4;
+        public static final int widget_4x_green=0x7f0201c5;
+        public static final int widget_4x_red=0x7f0201c6;
+        public static final int widget_4x_white=0x7f0201c7;
+        public static final int widget_4x_yellow=0x7f0201c8;
+        public static final int xingzuoyunshi=0x7f0201c9;
+        public static final int xradiation_filter=0x7f0201ca;
+        public static final int ycb_crlinear_filter=0x7f0201cb;
+        public static final int ycb_crlinear_filter2=0x7f0201cc;
+        public static final int youxiang=0x7f0201cd;
+        public static final int zoomblur_filter=0x7f0201ce;
     }
     public static final class id {
         public static final int East=0x7f070000;
         public static final int North=0x7f070003;
         public static final int South=0x7f070001;
         public static final int West=0x7f070002;
-        public static final int about=0x7f0700b3;
-        public static final int action_select_all=0x7f0700ec;
-        public static final int action_settings=0x7f0700e6;
-        public static final int actionbarLayout=0x7f0700b5;
-        public static final int actionbar_base=0x7f070025;
-        public static final int actionbar_item=0x7f07000a;
-        public static final int add_diary_layout=0x7f07005f;
-        public static final int adresscity=0x7f070040;
-        public static final int advice=0x7f070023;
-        public static final int assets=0x7f07000d;
-        public static final int atDescTextView=0x7f0700c1;
-        public static final int atLayout=0x7f0700bc;
-        public static final int atTextView=0x7f0700c0;
-        public static final int backImageView=0x7f0700c4;
-        public static final int bajiaoxing=0x7f070039;
-        public static final int billshow_text=0x7f070073;
-        public static final int btn_confirm=0x7f070059;
-        public static final int btn_neg=0x7f0700df;
-        public static final int btn_new_note=0x7f0700a4;
-        public static final int btn_pos=0x7f0700e1;
-        public static final int btn_set_bg_color=0x7f070087;
-        public static final int button1=0x7f070069;
-        public static final int button2=0x7f07006a;
-        public static final int button3=0x7f07006b;
-        public static final int card=0x7f070052;
-        public static final int cash=0x7f07000f;
-        public static final int cb_edit_item=0x7f07009c;
-        public static final int center_music_window_close=0x7f0700ad;
-        public static final int changedshow_jpg=0x7f07001f;
-        public static final int changedshow_number=0x7f070021;
-        public static final int changedshow_text=0x7f070020;
-        public static final int checkedImageView=0x7f0700c9;
-        public static final int choose_by_camera=0x7f07006d;
-        public static final int choose_by_local=0x7f07006e;
-        public static final int chuxu_jpg=0x7f070013;
-        public static final int chuxu_text=0x7f070014;
-        public static final int city=0x7f070050;
-        public static final int clear_btn=0x7f070064;
-        public static final int closeImageView=0x7f0700b9;
-        public static final int company=0x7f070051;
-        public static final int content_frame_base=0x7f070026;
-        public static final int credit=0x7f070015;
-        public static final int custom_grid=0x7f070028;
-        public static final int day=0x7f0700d3;
-        public static final int delete=0x7f0700ee;
-        public static final int deposit=0x7f070012;
-        public static final int dgv_wobble_tag=0x7f070004;
-        public static final int dialog_Group=0x7f0700dd;
-        public static final int dialog_cancel=0x7f07006f;
-        public static final int dialog_marBottom=0x7f0700de;
-        public static final int divider=0x7f0700ba;
-        public static final int edit_btn=0x7f07002c;
-        public static final int edit_diary_info=0x7f070065;
-        public static final int edit_img=0x7f07002b;
-        public static final int edittxt_result=0x7f0700dc;
-        public static final int email=0x7f07000c;
-        public static final int et_edit_text=0x7f07009d;
-        public static final int expandable_title=0x7f070076;
-        public static final int first_column=0x7f07005b;
-        public static final int font_size_selector=0x7f070093;
-        public static final int galleryFilter=0x7f07002a;
-        public static final int gallery_layout=0x7f070029;
-        public static final int geren=0x7f070035;
-        public static final int gridView=0x7f0700c6;
-        public static final int gridv_img=0x7f070078;
-        public static final int gridv_text=0x7f070079;
-        public static final int gridview=0x7f070022;
-        public static final int group_arrow=0x7f070077;
-        public static final int hScrollView=0x7f0700be;
-        public static final int hour=0x7f0700d4;
-        public static final int id_city=0x7f070056;
-        public static final int id_district=0x7f070057;
-        public static final int id_province=0x7f070055;
-        public static final int id_tv_loadingmsg=0x7f070068;
-        public static final int idcardphone=0x7f07003b;
-        public static final int idcardquery=0x7f07003c;
-        public static final int idcardshowdatas=0x7f07003f;
-        public static final int idcardshowerror=0x7f07003d;
-        public static final int image=0x7f07007d;
-        public static final int imageRemoveBtn=0x7f0700c3;
-        public static final int imageView=0x7f0700c2;
-        public static final int imagesLinearLayout=0x7f0700bf;
-        public static final int img=0x7f070066;
-        public static final int img1=0x7f070033;
-        public static final int img_line=0x7f0700e0;
-        public static final int imgbill=0x7f070072;
-        public static final int income_btn=0x7f07001c;
-        public static final int ios_move=0x7f0700b4;
-        public static final int ipadress=0x7f070043;
-        public static final int ipadresscity=0x7f070048;
-        public static final int iplocation=0x7f070049;
-        public static final int ipquery=0x7f070044;
-        public static final int ipshowdatas=0x7f070047;
-        public static final int ipshowerror=0x7f070045;
-        public static final int ipshowresult=0x7f070046;
-        public static final int isselect=0x7f0700ae;
-        public static final int item_img=0x7f07007e;
-        public static final int item_title=0x7f07007f;
-        public static final int iv_alert_icon=0x7f070082;
-        public static final int iv_bg_blue=0x7f07008b;
-        public static final int iv_bg_blue_select=0x7f07008c;
-        public static final int iv_bg_green=0x7f07008f;
-        public static final int iv_bg_green_select=0x7f070090;
-        public static final int iv_bg_red=0x7f070091;
-        public static final int iv_bg_red_select=0x7f070092;
-        public static final int iv_bg_white=0x7f07008d;
-        public static final int iv_bg_white_select=0x7f07008e;
-        public static final int iv_bg_yellow=0x7f070089;
-        public static final int iv_bg_yellow_select=0x7f07008a;
-        public static final int iv_large_select=0x7f070099;
-        public static final int iv_medium_select=0x7f070097;
-        public static final int iv_small_select=0x7f070095;
-        public static final int iv_start_weibo=0x7f07007b;
-        public static final int iv_super_select=0x7f07009b;
-        public static final int jisun=0x7f070037;
-        public static final int lLayout_bg=0x7f0700da;
-        public static final int lLayout_content=0x7f0700d8;
-        public static final int laybtn1=0x7f070032;
-        public static final int laybtn4=0x7f070038;
-        public static final int laybtn5=0x7f070036;
-        public static final int laybtn6=0x7f070034;
-        public static final int length_txt=0x7f070062;
-        public static final int lighttext=0x7f0700af;
-        public static final int list_expandaable=0x7f070027;
-        public static final int ll=0x7f07002e;
-        public static final int ll_font_large=0x7f070098;
-        public static final int ll_font_normal=0x7f070096;
-        public static final int ll_font_small=0x7f070094;
-        public static final int ll_font_super=0x7f07009a;
-        public static final int loadingImageView=0x7f070067;
-        public static final int lock=0x7f0700b1;
-        public static final int lock_9_view=0x7f070054;
-        public static final int logoImageView=0x7f0700c7;
-        public static final int mainRelLayout=0x7f0700b6;
-        public static final int main_circle_layout=0x7f070031;
-        public static final int mainfl=0x7f07004a;
-        public static final int menu_delete=0x7f0700e7;
-        public static final int menu_font_size=0x7f0700e8;
-        public static final int menu_new_note=0x7f0700eb;
-        public static final int menu_search=0x7f0700ea;
-        public static final int menu_share=0x7f0700e9;
-        public static final int message_1=0x7f070075;
-        public static final int min=0x7f0700d5;
-        public static final int month=0x7f0700d2;
-        public static final int more_window_auto=0x7f0700ab;
-        public static final int more_window_collect=0x7f0700aa;
-        public static final int more_window_delete=0x7f0700a9;
-        public static final int more_window_external=0x7f0700ac;
-        public static final int more_window_local=0x7f0700a7;
-        public static final int more_window_online=0x7f0700a8;
-        public static final int move=0x7f0700ed;
-        public static final int my_listview=0x7f07005e;
-        public static final int my_scroll_view=0x7f07005a;
-        public static final int nameTextView=0x7f0700c8;
-        public static final int navigation_bar=0x7f0700a5;
-        public static final int note_bg_color_selector=0x7f070088;
-        public static final int note_edit_list=0x7f070086;
-        public static final int note_edit_view=0x7f070085;
-        public static final int note_item=0x7f07009e;
-        public static final int note_title=0x7f070080;
-        public static final int notes_list=0x7f0700a3;
-        public static final int okImageView=0x7f0700c5;
-        public static final int other_view=0x7f07006c;
-        public static final int pay_btn=0x7f07001b;
-        public static final int postcodetext=0x7f070058;
-        public static final int pro_web=0x7f07000b;
-        public static final int query=0x7f07004d;
-        public static final int relbtn=0x7f07003a;
-        public static final int right=0x7f070030;
-        public static final int rl=0x7f07007a;
-        public static final int sLayout_content=0x7f0700d7;
-        public static final int screen=0x7f070005;
-        public static final int second_column=0x7f07005c;
-        public static final int selection_menu=0x7f0700a6;
-        public static final int sex=0x7f070041;
-        public static final int share=0x7f0700b2;
-        public static final int showdata=0x7f07004f;
-        public static final int showerror=0x7f07004e;
-        public static final int showresult=0x7f07003e;
-        public static final int side_layout=0x7f07004b;
-        public static final int side_lock_tv=0x7f0700b0;
-        public static final int submit=0x7f070024;
-        public static final int sv_note_edit=0x7f070084;
-        public static final int tab_img=0x7f0700cb;
-        public static final int tab_layout=0x7f0700ca;
-        public static final int tab_name=0x7f0700cc;
-        public static final int take_text=0x7f07001e;
-        public static final int taketime=0x7f070071;
-        public static final int telphone=0x7f07004c;
-        public static final int textCounterTextView=0x7f0700bd;
-        public static final int textEditText=0x7f0700bb;
-        public static final int text_layout=0x7f07002f;
-        public static final int textview_one=0x7f0700e2;
-        public static final int textview_two=0x7f0700e3;
-        public static final int third_column=0x7f07005d;
-        public static final int time=0x7f070042;
-        public static final int timePicker1=0x7f0700d0;
-        public static final int time_text=0x7f07001d;
-        public static final int tip=0x7f070053;
-        public static final int titleEditText=0x7f0700b8;
-        public static final int titleLayout=0x7f0700b7;
-        public static final int title_txt=0x7f070063;
-        public static final int topbar=0x7f070006;
-        public static final int topbar_menu_left=0x7f070007;
-        public static final int topbar_menu_right=0x7f070009;
-        public static final int topbar_title=0x7f070008;
-        public static final int tv_alert_date=0x7f070083;
-        public static final int tv_modified_date=0x7f070081;
-        public static final int tv_name=0x7f07009f;
-        public static final int tv_time=0x7f0700a1;
-        public static final int tv_title=0x7f0700a0;
-        public static final int tv_title_bar=0x7f0700a2;
-        public static final int txt_cancel=0x7f0700d9;
-        public static final int txt_msg=0x7f0700db;
-        public static final int txt_title=0x7f0700d6;
-        public static final int view_date=0x7f0700cf;
-        public static final int view_info=0x7f0700ce;
-        public static final int view_title=0x7f0700cd;
-        public static final int viewpager=0x7f07002d;
-        public static final int weather=0x7f070061;
-        public static final int web_jpg=0x7f070019;
-        public static final int web_text=0x7f07001a;
-        public static final int webaccount=0x7f070018;
-        public static final int week=0x7f070060;
-        public static final int widget_bg_image=0x7f0700e4;
-        public static final int widget_text=0x7f0700e5;
-        public static final int xian=0x7f070070;
-        public static final int xianjin_jpg=0x7f070010;
-        public static final int xianjin_text=0x7f070011;
-        public static final int xinyon_jpg=0x7f070016;
-        public static final int xinyongka_text=0x7f070017;
-        public static final int year=0x7f0700d1;
-        public static final int zongzican_text=0x7f07000e;
-        public static final int zoom_image_view=0x7f07007c;
-        public static final int zuobillshow_text=0x7f070074;
+        public static final int about=0x7f0700c3;
+        public static final int action_select_all=0x7f0700fc;
+        public static final int action_settings=0x7f0700f6;
+        public static final int actionbarLayout=0x7f0700c5;
+        public static final int actionbar_base=0x7f070028;
+        public static final int actionbar_item=0x7f07000d;
+        public static final int add_diary_layout=0x7f070062;
+        public static final int adresscity=0x7f070043;
+        public static final int advice=0x7f070026;
+        public static final int all_prgressbar=0x7f07006b;
+        public static final int assets=0x7f070010;
+        public static final int atDescTextView=0x7f0700d1;
+        public static final int atLayout=0x7f0700cc;
+        public static final int atTextView=0x7f0700d0;
+        public static final int auto=0x7f070004;
+        public static final int backImageView=0x7f0700d4;
+        public static final int bajiaoxing=0x7f07003c;
+        public static final int billshow_text=0x7f070080;
+        public static final int btn_confirm=0x7f07005c;
+        public static final int btn_neg=0x7f0700ef;
+        public static final int btn_new_note=0x7f0700b4;
+        public static final int btn_pos=0x7f0700f1;
+        public static final int btn_set_bg_color=0x7f070097;
+        public static final int button1=0x7f070076;
+        public static final int button2=0x7f070077;
+        public static final int button3=0x7f070078;
+        public static final int card=0x7f070055;
+        public static final int cash=0x7f070012;
+        public static final int cb_edit_item=0x7f0700ac;
+        public static final int center_music_window_close=0x7f0700bd;
+        public static final int changedshow_jpg=0x7f070022;
+        public static final int changedshow_number=0x7f070024;
+        public static final int changedshow_text=0x7f070023;
+        public static final int checkedImageView=0x7f0700d9;
+        public static final int choose_by_camera=0x7f07007a;
+        public static final int choose_by_local=0x7f07007b;
+        public static final int chuxu_jpg=0x7f070016;
+        public static final int chuxu_text=0x7f070017;
+        public static final int city=0x7f070053;
+        public static final int clear_btn=0x7f070067;
+        public static final int closeImageView=0x7f0700c9;
+        public static final int color=0x7f07006e;
+        public static final int company=0x7f070054;
+        public static final int content_frame_base=0x7f070029;
+        public static final int credit=0x7f070018;
+        public static final int custom_grid=0x7f07002b;
+        public static final int day=0x7f0700e3;
+        public static final int delete=0x7f0700fe;
+        public static final int deposit=0x7f070015;
+        public static final int dgv_wobble_tag=0x7f070007;
+        public static final int dialog_Group=0x7f0700ed;
+        public static final int dialog_cancel=0x7f07007c;
+        public static final int dialog_marBottom=0x7f0700ee;
+        public static final int divider=0x7f0700ca;
+        public static final int edit_btn=0x7f07002f;
+        public static final int edit_diary_info=0x7f070068;
+        public static final int edit_img=0x7f07002e;
+        public static final int edittxt_result=0x7f0700ec;
+        public static final int email=0x7f07000f;
+        public static final int et_edit_text=0x7f0700ad;
+        public static final int expandable_title=0x7f070083;
+        public static final int fancyCoverFlow=0x7f070069;
+        public static final int first_column=0x7f07005e;
+        public static final int font_size_selector=0x7f0700a3;
+        public static final int galleryFilter=0x7f07002d;
+        public static final int gallery_layout=0x7f07002c;
+        public static final int geren=0x7f070038;
+        public static final int gridView=0x7f0700d6;
+        public static final int gridv_img=0x7f070085;
+        public static final int gridv_text=0x7f070086;
+        public static final int gridview=0x7f070025;
+        public static final int group_arrow=0x7f070084;
+        public static final int hScrollView=0x7f0700ce;
+        public static final int health=0x7f07006c;
+        public static final int hour=0x7f0700e4;
+        public static final int id_city=0x7f070059;
+        public static final int id_district=0x7f07005a;
+        public static final int id_province=0x7f070058;
+        public static final int id_tv_loadingmsg=0x7f070075;
+        public static final int idcardphone=0x7f07003e;
+        public static final int idcardquery=0x7f07003f;
+        public static final int idcardshowdatas=0x7f070042;
+        public static final int idcardshowerror=0x7f070040;
+        public static final int image=0x7f07008a;
+        public static final int imageRemoveBtn=0x7f0700d3;
+        public static final int imageView=0x7f0700d2;
+        public static final int imagesLinearLayout=0x7f0700cf;
+        public static final int img=0x7f070073;
+        public static final int img1=0x7f070036;
+        public static final int img_line=0x7f0700f0;
+        public static final int imgbill=0x7f07007f;
+        public static final int income_btn=0x7f07001f;
+        public static final int invisible=0x7f070006;
+        public static final int ios_move=0x7f0700c4;
+        public static final int ipadress=0x7f070046;
+        public static final int ipadresscity=0x7f07004b;
+        public static final int iplocation=0x7f07004c;
+        public static final int ipquery=0x7f070047;
+        public static final int ipshowdatas=0x7f07004a;
+        public static final int ipshowerror=0x7f070048;
+        public static final int ipshowresult=0x7f070049;
+        public static final int isselect=0x7f0700be;
+        public static final int item_btn=0x7f07008d;
+        public static final int item_img=0x7f07008e;
+        public static final int item_title=0x7f07008f;
+        public static final int iv_alert_icon=0x7f070092;
+        public static final int iv_bg_blue=0x7f07009b;
+        public static final int iv_bg_blue_select=0x7f07009c;
+        public static final int iv_bg_green=0x7f07009f;
+        public static final int iv_bg_green_select=0x7f0700a0;
+        public static final int iv_bg_red=0x7f0700a1;
+        public static final int iv_bg_red_select=0x7f0700a2;
+        public static final int iv_bg_white=0x7f07009d;
+        public static final int iv_bg_white_select=0x7f07009e;
+        public static final int iv_bg_yellow=0x7f070099;
+        public static final int iv_bg_yellow_select=0x7f07009a;
+        public static final int iv_large_select=0x7f0700a9;
+        public static final int iv_medium_select=0x7f0700a7;
+        public static final int iv_small_select=0x7f0700a5;
+        public static final int iv_start_weibo=0x7f070088;
+        public static final int iv_super_select=0x7f0700ab;
+        public static final int jisun=0x7f07003a;
+        public static final int lLayout_bg=0x7f0700ea;
+        public static final int lLayout_content=0x7f0700e8;
+        public static final int laybtn1=0x7f070035;
+        public static final int laybtn4=0x7f07003b;
+        public static final int laybtn5=0x7f070039;
+        public static final int laybtn6=0x7f070037;
+        public static final int length_txt=0x7f070065;
+        public static final int lighttext=0x7f0700bf;
+        public static final int list_expandaable=0x7f07002a;
+        public static final int ll=0x7f070031;
+        public static final int ll_font_large=0x7f0700a8;
+        public static final int ll_font_normal=0x7f0700a6;
+        public static final int ll_font_small=0x7f0700a4;
+        public static final int ll_font_super=0x7f0700aa;
+        public static final int loadingImageView=0x7f070074;
+        public static final int lock=0x7f0700c1;
+        public static final int lock_9_view=0x7f070057;
+        public static final int logoImageView=0x7f0700d7;
+        public static final int love_prgressbar=0x7f07006d;
+        public static final int mainRelLayout=0x7f0700c6;
+        public static final int main_circle_layout=0x7f070034;
+        public static final int mainfl=0x7f07004d;
+        public static final int menu_delete=0x7f0700f7;
+        public static final int menu_font_size=0x7f0700f8;
+        public static final int menu_new_note=0x7f0700fb;
+        public static final int menu_search=0x7f0700fa;
+        public static final int menu_share=0x7f0700f9;
+        public static final int message_1=0x7f070082;
+        public static final int min=0x7f0700e5;
+        public static final int money_prgressbar=0x7f070071;
+        public static final int month=0x7f0700e2;
+        public static final int more_window_auto=0x7f0700bb;
+        public static final int more_window_collect=0x7f0700ba;
+        public static final int more_window_delete=0x7f0700b9;
+        public static final int more_window_external=0x7f0700bc;
+        public static final int more_window_local=0x7f0700b7;
+        public static final int more_window_online=0x7f0700b8;
+        public static final int move=0x7f0700fd;
+        public static final int my_listview=0x7f070061;
+        public static final int my_scroll_view=0x7f07005d;
+        public static final int name=0x7f07008b;
+        public static final int nameTextView=0x7f0700d8;
+        public static final int navigation_bar=0x7f0700b5;
+        public static final int note_bg_color_selector=0x7f070098;
+        public static final int note_edit_list=0x7f070096;
+        public static final int note_edit_view=0x7f070095;
+        public static final int note_item=0x7f0700ae;
+        public static final int note_title=0x7f070090;
+        public static final int notes_list=0x7f0700b3;
+        public static final int number=0x7f070070;
+        public static final int okImageView=0x7f0700d5;
+        public static final int other_view=0x7f070079;
+        public static final int pay_btn=0x7f07001e;
+        public static final int postcodetext=0x7f07005b;
+        public static final int pro_web=0x7f07000e;
+        public static final int profile_image=0x7f07008c;
+        public static final int qfriend=0x7f070072;
+        public static final int query=0x7f070050;
+        public static final int relbtn=0x7f07003d;
+        public static final int right=0x7f070033;
+        public static final int rl=0x7f070087;
+        public static final int sLayout_content=0x7f0700e7;
+        public static final int screen=0x7f070008;
+        public static final int second_column=0x7f07005f;
+        public static final int selection_menu=0x7f0700b6;
+        public static final int sex=0x7f070044;
+        public static final int share=0x7f0700c2;
+        public static final int showdata=0x7f070052;
+        public static final int showerror=0x7f070051;
+        public static final int showresult=0x7f070041;
+        public static final int side_layout=0x7f07004e;
+        public static final int side_lock_tv=0x7f0700c0;
+        public static final int submit=0x7f070027;
+        public static final int summary=0x7f07006a;
+        public static final int sv_note_edit=0x7f070094;
+        public static final int tab_img=0x7f0700db;
+        public static final int tab_layout=0x7f0700da;
+        public static final int tab_name=0x7f0700dc;
+        public static final int take_text=0x7f070021;
+        public static final int taketime=0x7f07007e;
+        public static final int telphone=0x7f07004f;
+        public static final int textCounterTextView=0x7f0700cd;
+        public static final int textEditText=0x7f0700cb;
+        public static final int text_layout=0x7f070032;
+        public static final int textview_one=0x7f0700f2;
+        public static final int textview_two=0x7f0700f3;
+        public static final int third_column=0x7f070060;
+        public static final int time=0x7f070045;
+        public static final int timePicker1=0x7f0700e0;
+        public static final int time_text=0x7f070020;
+        public static final int tip=0x7f070056;
+        public static final int titleEditText=0x7f0700c8;
+        public static final int titleLayout=0x7f0700c7;
+        public static final int title_txt=0x7f070066;
+        public static final int topbar=0x7f070009;
+        public static final int topbar_menu_left=0x7f07000a;
+        public static final int topbar_menu_right=0x7f07000c;
+        public static final int topbar_title=0x7f07000b;
+        public static final int tv_alert_date=0x7f070093;
+        public static final int tv_modified_date=0x7f070091;
+        public static final int tv_name=0x7f0700af;
+        public static final int tv_time=0x7f0700b1;
+        public static final int tv_title=0x7f0700b0;
+        public static final int tv_title_bar=0x7f0700b2;
+        public static final int txt_cancel=0x7f0700e9;
+        public static final int txt_msg=0x7f0700eb;
+        public static final int txt_title=0x7f0700e6;
+        public static final int view_date=0x7f0700df;
+        public static final int view_info=0x7f0700de;
+        public static final int view_title=0x7f0700dd;
+        public static final int viewpager=0x7f070030;
+        public static final int visible=0x7f070005;
+        public static final int weather=0x7f070064;
+        public static final int web_jpg=0x7f07001c;
+        public static final int web_text=0x7f07001d;
+        public static final int webaccount=0x7f07001b;
+        public static final int week=0x7f070063;
+        public static final int widget_bg_image=0x7f0700f4;
+        public static final int widget_text=0x7f0700f5;
+        public static final int work_prgressbar=0x7f07006f;
+        public static final int xian=0x7f07007d;
+        public static final int xianjin_jpg=0x7f070013;
+        public static final int xianjin_text=0x7f070014;
+        public static final int xinyon_jpg=0x7f070019;
+        public static final int xinyongka_text=0x7f07001a;
+        public static final int year=0x7f0700e1;
+        public static final int zongzican_text=0x7f070011;
+        public static final int zoom_image_view=0x7f070089;
+        public static final int zuobillshow_text=0x7f070081;
     }
     public static final class layout {
         public static final int actionbar=0x7f030000;
@@ -1016,41 +1234,43 @@ containing a value of this type.
         public static final int activity_text_diary=0x7f030015;
         public static final int activity_transfer=0x7f030016;
         public static final int activity_write_diary=0x7f030017;
-        public static final int customprogressdialog=0x7f030018;
-        public static final int deal_photo_dialog=0x7f030019;
-        public static final int dialog_choose_img=0x7f03001a;
-        public static final int expand_child=0x7f03001b;
-        public static final int expand_group=0x7f03001c;
-        public static final int gridviewitem=0x7f03001d;
-        public static final int guide_a=0x7f03001e;
-        public static final int guide_b=0x7f03001f;
-        public static final int guide_c=0x7f030020;
-        public static final int image_details=0x7f030021;
-        public static final int image_item=0x7f030022;
-        public static final int item_grid=0x7f030023;
-        public static final int note_edit=0x7f030024;
-        public static final int note_edit_list_item=0x7f030025;
-        public static final int note_item=0x7f030026;
-        public static final int note_list=0x7f030027;
-        public static final int note_list_dropdown_menu=0x7f030028;
-        public static final int note_list_footer=0x7f030029;
-        public static final int popupmenu_layout=0x7f03002a;
-        public static final int select_img_layout=0x7f03002b;
-        public static final int slidingmenu_layout=0x7f03002c;
-        public static final int ssdk_oks_skyblue_editpage=0x7f03002d;
-        public static final int ssdk_oks_skyblue_editpage_at_layout=0x7f03002e;
-        public static final int ssdk_oks_skyblue_editpage_inc_image_layout=0x7f03002f;
-        public static final int ssdk_oks_skyblue_share_actionbar=0x7f030030;
-        public static final int ssdk_oks_skyblue_share_platform_list=0x7f030031;
-        public static final int ssdk_oks_skyblue_share_platform_list_item=0x7f030032;
-        public static final int tab_bottom=0x7f030033;
-        public static final int text_list_item=0x7f030034;
-        public static final int timepicker=0x7f030035;
-        public static final int toast_view_actionsheet=0x7f030036;
-        public static final int toast_view_alertdialog=0x7f030037;
-        public static final int up_dialog_layout=0x7f030038;
-        public static final int widget_2x=0x7f030039;
-        public static final int widget_4x=0x7f03003a;
+        public static final int content_main=0x7f030018;
+        public static final int customprogressdialog=0x7f030019;
+        public static final int deal_photo_dialog=0x7f03001a;
+        public static final int dialog_choose_img=0x7f03001b;
+        public static final int expand_child=0x7f03001c;
+        public static final int expand_group=0x7f03001d;
+        public static final int gridviewitem=0x7f03001e;
+        public static final int guide_a=0x7f03001f;
+        public static final int guide_b=0x7f030020;
+        public static final int guide_c=0x7f030021;
+        public static final int image_details=0x7f030022;
+        public static final int image_item=0x7f030023;
+        public static final int item_fancycoverflow=0x7f030024;
+        public static final int item_grid=0x7f030025;
+        public static final int note_edit=0x7f030026;
+        public static final int note_edit_list_item=0x7f030027;
+        public static final int note_item=0x7f030028;
+        public static final int note_list=0x7f030029;
+        public static final int note_list_dropdown_menu=0x7f03002a;
+        public static final int note_list_footer=0x7f03002b;
+        public static final int popupmenu_layout=0x7f03002c;
+        public static final int select_img_layout=0x7f03002d;
+        public static final int slidingmenu_layout=0x7f03002e;
+        public static final int ssdk_oks_skyblue_editpage=0x7f03002f;
+        public static final int ssdk_oks_skyblue_editpage_at_layout=0x7f030030;
+        public static final int ssdk_oks_skyblue_editpage_inc_image_layout=0x7f030031;
+        public static final int ssdk_oks_skyblue_share_actionbar=0x7f030032;
+        public static final int ssdk_oks_skyblue_share_platform_list=0x7f030033;
+        public static final int ssdk_oks_skyblue_share_platform_list_item=0x7f030034;
+        public static final int tab_bottom=0x7f030035;
+        public static final int text_list_item=0x7f030036;
+        public static final int timepicker=0x7f030037;
+        public static final int toast_view_actionsheet=0x7f030038;
+        public static final int toast_view_alertdialog=0x7f030039;
+        public static final int up_dialog_layout=0x7f03003a;
+        public static final int widget_2x=0x7f03003b;
+        public static final int widget_4x=0x7f03003c;
     }
     public static final class menu {
         public static final int about=0x7f0d0000;
@@ -1351,6 +1571,7 @@ containing a value of this type.
         /**  自定义dialogActivity的样式 
          */
         public static final int MyDialogStyle_top=0x7f0c0008;
+        public static final int NumberProgressBar_Default=0x7f0c0018;
         public static final int TextAppearanceLarge=0x7f0c0010;
         public static final int TextAppearanceMedium=0x7f0c0011;
         public static final int TextAppearanceNormal=0x7f0c0012;
@@ -1483,13 +1704,82 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_color com.cdjysdkj.diary:civ_border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_overlay com.cdjysdkj.diary:civ_border_overlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_width com.cdjysdkj.diary:civ_border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_fill_color com.cdjysdkj.diary:civ_fill_color}</code></td><td></td></tr>
            <tr><td><code>{@link #CircleImageView_name com.cdjysdkj.diary:name}</code></td><td></td></tr>
            </table>
+           @see #CircleImageView_civ_border_color
+           @see #CircleImageView_civ_border_overlay
+           @see #CircleImageView_civ_border_width
+           @see #CircleImageView_civ_fill_color
            @see #CircleImageView_name
          */
         public static final int[] CircleImageView = {
-            0x7f010007
+            0x7f010007, 0x7f010020, 0x7f010021, 0x7f010022,
+            0x7f010023
         };
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#civ_border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:civ_border_color
+        */
+        public static final int CircleImageView_civ_border_color = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#civ_border_overlay}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:civ_border_overlay
+        */
+        public static final int CircleImageView_civ_border_overlay = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#civ_border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:civ_border_width
+        */
+        public static final int CircleImageView_civ_border_width = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#civ_fill_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:civ_fill_color
+        */
+        public static final int CircleImageView_civ_fill_color = 4;
         /**
           <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#name}
           attribute's value can be found in the {@link #CircleImageView} array.
@@ -1504,6 +1794,122 @@ containing a value of this type.
           @attr name com.cdjysdkj.diary:name
         */
         public static final int CircleImageView_name = 0;
+        /** Attributes that can be used with a FancyCoverFlow.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FancyCoverFlow_actionDistance com.cdjysdkj.diary:actionDistance}</code></td><td></td></tr>
+           <tr><td><code>{@link #FancyCoverFlow_maxRotation com.cdjysdkj.diary:maxRotation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FancyCoverFlow_scaleDownGravity com.cdjysdkj.diary:scaleDownGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #FancyCoverFlow_unselectedAlpha com.cdjysdkj.diary:unselectedAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #FancyCoverFlow_unselectedSaturation com.cdjysdkj.diary:unselectedSaturation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FancyCoverFlow_unselectedScale com.cdjysdkj.diary:unselectedScale}</code></td><td></td></tr>
+           </table>
+           @see #FancyCoverFlow_actionDistance
+           @see #FancyCoverFlow_maxRotation
+           @see #FancyCoverFlow_scaleDownGravity
+           @see #FancyCoverFlow_unselectedAlpha
+           @see #FancyCoverFlow_unselectedSaturation
+           @see #FancyCoverFlow_unselectedScale
+         */
+        public static final int[] FancyCoverFlow = {
+            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e,
+            0x7f01000f, 0x7f010010
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#actionDistance}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>May be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>auto</code></td><td>2147483647</td><td></td></tr>
+</table>
+          @attr name com.cdjysdkj.diary:actionDistance
+        */
+        public static final int FancyCoverFlow_actionDistance = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#maxRotation}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:maxRotation
+        */
+        public static final int FancyCoverFlow_maxRotation = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#scaleDownGravity}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:scaleDownGravity
+        */
+        public static final int FancyCoverFlow_scaleDownGravity = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#unselectedAlpha}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:unselectedAlpha
+        */
+        public static final int FancyCoverFlow_unselectedAlpha = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#unselectedSaturation}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:unselectedSaturation
+        */
+        public static final int FancyCoverFlow_unselectedSaturation = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#unselectedScale}
+          attribute's value can be found in the {@link #FancyCoverFlow} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:unselectedScale
+        */
+        public static final int FancyCoverFlow_unselectedScale = 2;
         /** Attributes that can be used with a Lock9View.
            <p>Includes the following attributes:</p>
            <table>
@@ -1521,7 +1927,7 @@ containing a value of this type.
            @see #Lock9View_nodeSrc
          */
         public static final int[] Lock9View = {
-            0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f
         };
         /**
           <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#lineColor}
@@ -1578,6 +1984,193 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.cdjysdkj.diary:nodeSrc
         */
         public static final int Lock9View_nodeSrc = 0;
+        /** Attributes that can be used with a NumberProgressBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_current com.cdjysdkj.diary:progress_current}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_max com.cdjysdkj.diary:progress_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_reached_bar_height com.cdjysdkj.diary:progress_reached_bar_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_reached_color com.cdjysdkj.diary:progress_reached_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_color com.cdjysdkj.diary:progress_text_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_offset com.cdjysdkj.diary:progress_text_offset}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_size com.cdjysdkj.diary:progress_text_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_text_visibility com.cdjysdkj.diary:progress_text_visibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_unreached_bar_height com.cdjysdkj.diary:progress_unreached_bar_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #NumberProgressBar_progress_unreached_color com.cdjysdkj.diary:progress_unreached_color}</code></td><td></td></tr>
+           </table>
+           @see #NumberProgressBar_progress_current
+           @see #NumberProgressBar_progress_max
+           @see #NumberProgressBar_progress_reached_bar_height
+           @see #NumberProgressBar_progress_reached_color
+           @see #NumberProgressBar_progress_text_color
+           @see #NumberProgressBar_progress_text_offset
+           @see #NumberProgressBar_progress_text_size
+           @see #NumberProgressBar_progress_text_visibility
+           @see #NumberProgressBar_progress_unreached_bar_height
+           @see #NumberProgressBar_progress_unreached_color
+         */
+        public static final int[] NumberProgressBar = {
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
+            0x7f01001a, 0x7f01001b
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_current}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_current
+        */
+        public static final int NumberProgressBar_progress_current = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_max}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_max
+        */
+        public static final int NumberProgressBar_progress_max = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_reached_bar_height}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_reached_bar_height
+        */
+        public static final int NumberProgressBar_progress_reached_bar_height = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_reached_color}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_reached_color
+        */
+        public static final int NumberProgressBar_progress_reached_color = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_text_color}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_text_color
+        */
+        public static final int NumberProgressBar_progress_text_color = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_text_offset}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_text_offset
+        */
+        public static final int NumberProgressBar_progress_text_offset = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_text_size}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_text_size
+        */
+        public static final int NumberProgressBar_progress_text_size = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_text_visibility}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>visible</code></td><td>0</td><td></td></tr>
+<tr><td><code>invisible</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name com.cdjysdkj.diary:progress_text_visibility
+        */
+        public static final int NumberProgressBar_progress_text_visibility = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_unreached_bar_height}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_unreached_bar_height
+        */
+        public static final int NumberProgressBar_progress_unreached_bar_height = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#progress_unreached_color}
+          attribute's value can be found in the {@link #NumberProgressBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.cdjysdkj.diary:progress_unreached_color
+        */
+        public static final int NumberProgressBar_progress_unreached_color = 2;
         /** Attributes that can be used with a SlidingMenu.
            <p>Includes the following attributes:</p>
            <table>
@@ -1609,6 +2202,29 @@ containing a value of this type.
           @attr name com.cdjysdkj.diary:rightPadding
         */
         public static final int SlidingMenu_rightPadding = 0;
+        /** Attributes that can be used with a Themes.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Themes_numberProgressBarStyle com.cdjysdkj.diary:numberProgressBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #Themes_numberProgressBarStyle
+         */
+        public static final int[] Themes = {
+            0x7f010011
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.cdjysdkj.diary.R.attr#numberProgressBarStyle}
+          attribute's value can be found in the {@link #Themes} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.cdjysdkj.diary:numberProgressBarStyle
+        */
+        public static final int Themes_numberProgressBarStyle = 0;
         /** Attributes that can be used with a roundedimageview.
            <p>Includes the following attributes:</p>
            <table>

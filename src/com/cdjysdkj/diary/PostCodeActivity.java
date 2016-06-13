@@ -10,7 +10,13 @@ import com.cdjysdkj.diary.application.PostBaseActivity;
 import com.cdjysdkj.diary.view.postcode.adapter.ArrayWheelAdapter;
 import com.cdjysdkj.diary.view.postcode.widget.OnWheelChangedListener;
 import com.cdjysdkj.diary.view.postcode.widget.WheelView;
-
+/**
+ * ÓÊ±à
+ *PostCodeActivity.java
+ * @author ³ÂÓå½ð
+ * @Description
+ * @Create Time 2016-6-12
+ */
 public class PostCodeActivity extends PostBaseActivity {
 
 	private WheelView mViewProvince;

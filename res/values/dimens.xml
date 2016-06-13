@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
-     <dimen name="body_padding_medium">10dp</dimen>
+    <dimen name="body_padding_medium">10dp</dimen>
     <dimen name="body_padding_large">10dp</dimen>
     <dimen name="more_window_item_margin">12dp</dimen>
     <dimen name="text_size_small">14sp</dimen>
@@ -15,17 +15,15 @@
     <dimen name="actionbar_height">48dip</dimen>
     <dimen name="actionbar_item_height">48dip</dimen>
     <dimen name="actionbar_item_width">48dip</dimen>
-	<dimen name="text_font_size_small">14sp</dimen>
+    <dimen name="text_font_size_small">14sp</dimen>
     <dimen name="activity_zero_margin">0dp</dimen>
- <dimen name="text_font_size_large">26sp</dimen>
+    <dimen name="text_font_size_large">26sp</dimen>
     <dimen name="text_font_size_medium">20sp</dimen>
     <dimen name="text_font_size_normal">17sp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="slidingmenu_offset">150dip</dimen>
-       <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-     <dimen name="round_width">80dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="round_width">80dp</dimen>
     <dimen name="round_hight">80dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="sp_twenty_two">22sp</dimen>
@@ -38,8 +36,8 @@
     <dimen name="sp_sixteen">16sp</dimen>
     <dimen name="sp_threeteen">13sp</dimen>
     <dimen name="sp_eighteen">18sp</dimen>
-     <dimen name="sp_twenty_six">26sp</dimen>
-    
+    <dimen name="sp_twenty_six">26sp</dimen>
+
     <!-- recommend -->
     <dimen name="dp_sixteen">16dp</dimen>
     <dimen name="dp_six">6dp</dimen>
@@ -50,7 +48,7 @@
     <dimen name="dp_eleven">11dp</dimen>
     <dimen name="dp_one">1dp</dimen>
     <dimen name="dp_firteen">15dp</dimen>
-   <dimen name="dp_threeteen">13dp</dimen>
+    <dimen name="dp_threeteen">13dp</dimen>
     <dimen name="dp_ten">10dp</dimen>
     <dimen name="dp_fivety">50dp</dimen>
     <dimen name="dp_sixty">60dp</dimen>
@@ -66,9 +64,12 @@
     <dimen name="img_width">120dp</dimen>
     <dimen name="img_hight">90dp</dimen>
     <dimen name="dp_hundred">100dp</dimen>
-    
     <dimen name="text_wight">80dp</dimen>
     <dimen name="register_text">65dp</dimen>
     <dimen name="dgv_overlap_if_switch_straight_line">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="width">160dp</dimen>
 
 </resources>

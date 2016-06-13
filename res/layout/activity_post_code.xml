@@ -57,7 +57,8 @@
     android:layout_marginRight="10dip"
     android:layout_marginTop="10dip"
     android:layout_marginBottom="10dip"
-    android:textColor="@color/black"
+    android:textSize="38sp"
+    android:textColor="@color/red"
     android:gravity="center"
     />
     <Button

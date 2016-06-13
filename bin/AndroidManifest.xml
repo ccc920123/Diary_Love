@@ -169,6 +169,11 @@
             android:name="com.cdjysdkj.diary.PostCodeActivity"
             android:label="@string/title_activity_post_code" >
         </activity>
+          <activity
+            android:name="com.cdjysdkj.diary.ConstellationActivity"
+            >
+        </activity>
+        
     </application>
 
 </manifest>

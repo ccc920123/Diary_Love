@@ -45,9 +45,6 @@ public class CenterActivity extends BaseHomeActivity {
 		
 		mainTitle=title.substring(1,title.length()-1).split(",");
 		mainImage=image.substring(1,image.length()-1).split(",");
-		
-		
-		
 		mGridView = (DynamicGridView) findViewById(R.id.custom_grid);
 		
 	}
@@ -138,6 +135,12 @@ public class CenterActivity extends BaseHomeActivity {
         	finish();
         	
         	
+        }else if("ÐÇ×ùÔËÊÆ".equals(str))
+        {
+        	
+        	intent.setClass(CenterActivity.this, ConstellationActivity.class);
+        	startActivity(intent);
+        	finish();
         }
         }
     });
