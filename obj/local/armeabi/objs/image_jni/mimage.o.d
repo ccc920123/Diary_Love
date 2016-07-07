@@ -17,7 +17,6 @@ obj/local/armeabi/objs/image_jni/mimage.o: jni/mimage.c \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/linux/types.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/machine/kernel.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/sys/sysmacros.h \
- E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/android/bitmap.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/math.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/limits.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/sys/limits.h \
@@ -26,7 +25,8 @@ obj/local/armeabi/objs/image_jni/mimage.o: jni/mimage.c \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/machine/limits.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/sys/syslimits.h \
  E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/asm/page.h \
- jni/img.h
+ jni/img.h jni/clamp.h \
+ E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/Math.h
 
 E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/jni.h:
 
@@ -64,8 +64,6 @@ E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/a
 
 E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/sys/sysmacros.h:
 
-E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/android/bitmap.h:
-
 E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/math.h:
 
 E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/limits.h:
@@ -83,3 +81,7 @@ E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/a
 E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/asm/page.h:
 
 jni/img.h:
+
+jni/clamp.h:
+
+E:/adt-bundle-windows-x86_64-20130917/NDK/android-ndk-r9b/platforms/android-18/arch-arm/usr/include/Math.h:

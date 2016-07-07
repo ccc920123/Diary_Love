@@ -18,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.cdjysdkj.diary.adapter.slidingadapter.Item;
 import com.cdjysdkj.diary.adapter.slidingadapter.MyFancyCoverFlowAdapter;
 import com.cdjysdkj.diary.application.BaseHomeActivity;
+import com.cdjysdkj.diary.application.MyApplication;
 import com.cdjysdkj.diary.constant.Constant;
 import com.cdjysdkj.diary.network.VolleyInterface;
 import com.cdjysdkj.diary.network.VolleyRequest;
@@ -40,7 +41,9 @@ public class ConstellationActivity extends BaseHomeActivity {
 	private String[] dateName = { "1/20-2/18", "2/19-3/20", "3/21-4/19",
 			"4/20-5/20", "5/21-6/21", "6/22-7/22", "7/23-8/22", "8/23-9/22",
 			"9/23-10/23", "10/24-11/22", "11/23-12/21", "12/22-1/19" };
-
+    private int[] image={R.drawable.shuiping,R.drawable.shuangyu,R.drawable.baiyang,
+    		R.drawable.jinniu,R.drawable.shuangzi,R.drawable.juxie,R.drawable.shizi,
+    		R.drawable.chunv,R.drawable.tianping,R.drawable.tianxie,R.drawable.sheshou,R.drawable.mojie};
 	String url = "http://web.juhe.cn:8080/constellation/getAll";
 	private TextView summaryText;
 	private TextView health, color, number, qfriend;
@@ -56,6 +59,7 @@ public class ConstellationActivity extends BaseHomeActivity {
 			Item item = new Item();
 			item.setName(title[i]);
 			item.setDateName(dateName[i]);
+			item.setImage(image[i]);
 			item.setSelected(false);
 			mFancyCoverFlows.add(item);
 		}
@@ -169,7 +173,11 @@ public class ConstellationActivity extends BaseHomeActivity {
 		}
 
 	}
-
+@Override
+public void onBackPressed() {
+	quitOrBack();
+}
+	
 	@Override
 	protected String getActionBarTitle() {
 		// TODO Auto-generated method stub
@@ -192,7 +200,11 @@ public class ConstellationActivity extends BaseHomeActivity {
 		// TODO Auto-generated method stub
 
 	}
-
+@Override
+protected void onDestroy() {
+	super.onDestroy();
+	MyApplication.getQueues().cancelAll("costip");
+}
 	private void quitOrBack() {
 		Intent intent = new Intent(ConstellationActivity.this,
 				CenterActivity.class);

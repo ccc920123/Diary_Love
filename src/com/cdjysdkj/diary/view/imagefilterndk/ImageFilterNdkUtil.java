@@ -67,7 +67,7 @@ public class ImageFilterNdkUtil {
 		return rBitmap;
 	}
 	/**
-	 * 照亮边缘
+	 * 雕刻
 	 * @param bitmap
 	 * @return
 	 */
@@ -127,22 +127,22 @@ public class ImageFilterNdkUtil {
 		return rBitmap;
 	}
 	/**
-	 * lomo
+	 * lomo  前四个飞机的图片处理
 	 * @param bitmap
 	 * @return
 	 */
-	public static Bitmap getNDKlomo(Bitmap bitmap) {
+	public static Bitmap getNDKlomo(Bitmap bitmap,int type) {
 		int width=bitmap.getWidth();
 		int height=bitmap.getHeight();
 		int[] buff=new int[width*height];
 		bitmap.getPixels(buff, 0, width, 1, 1, width-1, height-1);
-		int[] result=ImageFilterNdk.lomo(buff, width, height);
+		int[] result=ImageFilterNdk.lomo(buff, width, height,type);
 		Bitmap rBitmap=Bitmap.createBitmap(result, width, height, Bitmap.Config.RGB_565);
 		
 		return rBitmap;
 	}
 	/**
-	 * 图片灰度化
+	 * 图片灰度化（最后一个漂亮妹妹的处理，没有用jni）
 	 * @param bmpOriginal
 	 * @return
 	 */
@@ -160,5 +160,23 @@ public class ImageFilterNdkUtil {
 		paint.setColorFilter(f);
 		c.drawBitmap(bmpOriginal, 0, 0, paint);
 		return bmpGrayscale;
+	}
+	/**
+	 * 处理5，6个飞机
+	 * @param bitmap
+	 * @param type
+	 * @return
+	 * @throws 
+	 * @throw
+	 */
+	public static Bitmap getNDKfilterFiveAndSix(Bitmap bitmap,int type) {
+		int width=bitmap.getWidth();
+		int height=bitmap.getHeight();
+		int[] buff=new int[width*height];
+		bitmap.getPixels(buff, 0, width, 1, 1, width-1, height-1);
+		int[] result=ImageFilterNdk.filterfiveAndsix(buff, width, height,type);
+		Bitmap rBitmap=Bitmap.createBitmap(result, width, height, Bitmap.Config.RGB_565);
+		
+		return rBitmap;
 	}
 }

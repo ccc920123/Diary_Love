@@ -57,6 +57,8 @@ public class ImageFilterNdk {
 	 * @param height
 	 * @return
 	 */
-	public native static int[] lomo(int[] buff,int width,int height);
+	public native static int[] lomo(int[] buff,int width,int height,int type);
+	
+	public native static int[] filterfiveAndsix(int[] buff,int width,int height,int type);
 	
 }

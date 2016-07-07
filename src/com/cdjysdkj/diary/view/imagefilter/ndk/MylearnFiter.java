@@ -53,9 +53,9 @@ public class MylearnFiter implements IImageFilter {
 		case 7:
 			imageIn.setDestImage(ImageFilterNdkUtil.getNDKdim(imageIn.getSrouseImage()));
 			break;
-		case 8:
-			imageIn.setDestImage(ImageFilterNdkUtil.getNDKlomo(imageIn.getSrouseImage()));
-			break;
+//		case 8:
+//			imageIn.setDestImage(ImageFilterNdkUtil.getNDKlomo(imageIn.getSrouseImage()));
+//			break;
 		case 9:
 			imageIn.setDestImage(ImageFilterNdkUtil.toGrayscale(imageIn.getSrouseImage()));
 			break;

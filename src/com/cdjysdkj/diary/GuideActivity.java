@@ -34,7 +34,7 @@ public class GuideActivity extends FragmentActivity implements
 	// 记录当前选中位置
 	private int currentIndex;
 
-	private int[] layout = { R.layout.guide_a, R.layout.guide_b,
+	private int[] layout = {R.layout.guide_a, R.layout.guide_b,
 			R.layout.guide_c };
 	private FrameLayout fl;
 	private SplshView sp;
@@ -85,9 +85,11 @@ public class GuideActivity extends FragmentActivity implements
 
 		views = new ArrayList<View>();
 		// 初始化引导图片列表
+//		views.add(inflater.inflate(R.layout.guide_an, null));
 		views.add(inflater.inflate(R.layout.guide_a, null));
 		views.add(inflater.inflate(R.layout.guide_b, null));
 		views.add(inflater.inflate(R.layout.guide_c, null));
+	
 
 		// 初始化Adapter
 		viewAdapter = new WelcomeAdapter(getSupportFragmentManager(), layout);

@@ -46,6 +46,7 @@ public class MyFancyCoverFlowAdapter extends FancyCoverFlowAdapter {
         final Item item = getItem(position);
         holder.product_name.setText(item.getName());
         holder.product_btn.setText(item.getDateName());
+        holder.profile_image.setBackgroundDrawable(mContext.getResources().getDrawable(item.getImage()));
         return convertView;
     }
 

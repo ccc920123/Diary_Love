@@ -50,7 +50,7 @@ public class AdviceActivity extends BaseHomeActivity {
 
 		// 必须明确使用mailto前缀来修饰邮件地址,如果使用
 		// intent.putExtra(Intent.EXTRA_EMAIL, email)，结果将匹配不到任何应用
-		Uri uri = Uri.parse("mailto:" + "616707902@qq.com"); // 616707902@qq.com
+		Uri uri = Uri.parse("mailto:" + "645503254@qq.com"); // 616707902@qq.com
 																// mailto:
 		// String[] email = {"3802**92@qq.com"};
 		Intent intent = new Intent(Intent.ACTION_SENDTO, uri);

@@ -83,13 +83,6 @@
                             android:layout_gravity="center"
                             android:src="@drawable/home_mbank_5_normal" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="日  记  本"
-                            android:textSize="14dip" />
                     </com.cdjysdkj.diary.view.CircleImageView>
 
                     <com.cdjysdkj.diary.view.CircleImageView
@@ -106,13 +99,6 @@
                             android:layout_gravity="center"
                             android:src="@drawable/wenb" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="生活账单"
-                            android:textSize="14dip" />
                     </com.cdjysdkj.diary.view.CircleImageView>
 
                     <com.cdjysdkj.diary.view.CircleImageView
@@ -129,13 +115,6 @@
                             android:layout_gravity="center"
                             android:src="@drawable/photo_text" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="精彩瞬间"
-                            android:textSize="14dip" />
                     </com.cdjysdkj.diary.view.CircleImageView>
 
                     <com.cdjysdkj.diary.view.CircleImageView
@@ -152,13 +131,6 @@
                             android:layout_gravity="center"
                             android:src="@drawable/noteyuy" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="生活便签"
-                            android:textSize="14dip" />
                     </com.cdjysdkj.diary.view.CircleImageView>
                 </com.cdjysdkj.diary.view.CircleLayout>
 
@@ -168,11 +140,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center" >
 
-                    <ImageView
+              <!--       <ImageView
                         android:layout_width="104.0dip"
                         android:layout_height="104.0dip"
                         android:layout_centerInParent="true"
-                        android:background="@drawable/center" />
+                        android:background="@drawable/center" /> -->
 
                     <ImageView
                         android:layout_width="116.0dip"

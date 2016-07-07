@@ -18,6 +18,11 @@
 
 package com.cdjysdkj.diary.view.imagefilter;
 
+import com.cdjysdkj.diary.EditImageActivity;
+import com.cdjysdkj.diary.view.imagefilterndk.ImageFilterNdkUtil;
+
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Point;
 
 
@@ -31,8 +36,13 @@ public class TileReflectionFilter implements IImageFilter{
     double   m_curvature ;
 	final   int aasamples = 17;
 	Point[]   m_aapt = new Point[aasamples];
-	byte m_focusType;
+	int m_focusType;
     int m_size = 24;
+    
+    
+    private int m_VideoType;
+
+    public boolean isNDK=false;
       
     /**
 	Constructor \n
@@ -64,17 +74,22 @@ public class TileReflectionFilter implements IImageFilter{
 	}
 	
 	
-    public TileReflectionFilter(int nSquareSize, int nCurvature)
-    {
-    	 this(nSquareSize, nCurvature, 45, (byte)0);
-    }
 
+//	public TileReflectionFilter(int nVideoType,boolean isndk)
+//	{
+//		this.m_VideoType=nVideoType;
+//		this.isNDK=isndk;
+//		
+//	}
     
 	
 	
 	public Image process(Image imageIn) {
 	{
-		  int r, g, b;
+		
+		
+//		imageIn.setDestImage(ImageFilterNdkUtil.getNDKfilterFiveAndSix(imageIn.getSrouseImage(),m_VideoType));
+				  int r, g, b;
 		  int width = imageIn.getWidth();
 		  int height = imageIn.getHeight();
 		  double hw = width / 2.0;
@@ -155,10 +170,9 @@ public class TileReflectionFilter implements IImageFilter{
 	 }
    }
 
-
 	@Override
 	public boolean getisNDK() {
 		// TODO Auto-generated method stub
-		return false;
+		return isNDK;
 	}
 }

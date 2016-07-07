@@ -61,7 +61,6 @@ public class HomeActivity extends BaseHomeActivity implements
 	private LinearLayout adviceLayout;
 
 	private SharedPreferences preferences;
-	private ClickContinue mlighttext;
 	private LinearLayout textlLayout;
 
 	@Override
@@ -73,7 +72,6 @@ public class HomeActivity extends BaseHomeActivity implements
 	}
 
 	private void init() {
-		mlighttext.upDateText();
 		if (Constant.HOMETIMES < 1) {
 			textlLayout.setLayoutAnimation(getAnimation());
 			circleMenu.setLayoutAnimation(getAnimation());
@@ -171,7 +169,6 @@ public class HomeActivity extends BaseHomeActivity implements
 		shareLayout = (LinearLayout) findViewById(R.id.share);
 		aboutLayout = (LinearLayout) findViewById(R.id.about);
 		adviceLayout = (LinearLayout) findViewById(R.id.advice);
-		mlighttext = (ClickContinue) findViewById(R.id.lighttext);
 		textlLayout = (LinearLayout) findViewById(R.id.text_layout);
 	}
 
@@ -185,22 +182,22 @@ public class HomeActivity extends BaseHomeActivity implements
 		// oks.setNotification(R.drawable.ic_launcher,
 		// getString(R.string.app_name));
 		// title标题，印象笔记、邮箱、信息、微信、人人网和QQ空间使用
-		oks.setTitle("I·记");
+		oks.setTitle("随手记");
 		// titleUrl是标题的网络链接，仅在人人网和QQ空间使用
-		oks.setTitleUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.chenpan.heart.diary");
+		oks.setTitleUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.cdjysdkj.diary");
 		// text是分享文本，所有平台都需要这个字段
-		oks.setText("去过的，过去的，都是美好的回忆！");
+		oks.setText("去过的，过去的，都是美好的回忆，在好的记性都不如烂笔头");
 		// imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
 		oks.setImagePath(Constant.MYAPP_PATH_ICON);// 确保SDcard下面存在此张图片
 		//oks.setImageUrl();
 		// url仅在微信（包括好友和朋友圈）中使用
-		oks.setUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.chenpan.heart.diary");
+		oks.setUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.cdjysdkj.diary");
 		// comment是我对这条分享的评论，仅在人人网和QQ空间使用
-		oks.setComment("我是测试评论文本");
+		oks.setComment("去过的，过去的，都是美好的回忆，在好的记性都不如烂笔头");
 		// site是分享此内容的网站名称，仅在QQ空间使用
 		oks.setSite(getString(R.string.app_name));
 		// siteUrl是分享此内容的网站地址，仅在QQ空间使用
-		oks.setSiteUrl("http://sharesdk.cn");
+		oks.setSiteUrl("http://a.app.qq.com/o/simple.jsp?pkgname=com.cdjysdkj.diary");
 		
 		// 启动分享GUI
 		oks.show(this);

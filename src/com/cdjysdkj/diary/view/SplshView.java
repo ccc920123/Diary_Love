@@ -18,10 +18,12 @@ import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 
 import com.cdjysdkj.diary.R;
+
 /**
  * 开始界面圆形旋转，扩散
+ * 
  * @author Administrator
- *
+ * 
  */
 
 public class SplshView extends View {
@@ -136,7 +138,7 @@ public class SplshView extends View {
 	 */
 	public void splshDisapaer() {
 		mState = new MergingState();
-		//invalidate();
+		// invalidate();
 	}
 
 	@Override
@@ -164,7 +166,7 @@ public class SplshView extends View {
 			// 估值器
 			animator = ValueAnimator.ofFloat(0, (float) Math.PI * 2);
 			animator.setDuration(mRotationDuration);
-			//animator.setInterpolator(new OvershootInterpolator(50f));
+			// animator.setInterpolator(new OvershootInterpolator(50f));
 			animator.setInterpolator(new LinearInterpolator());
 			animator.addUpdateListener(new AnimatorUpdateListener() {
 
@@ -189,11 +191,9 @@ public class SplshView extends View {
 			drawCircle(canvas);
 
 		}
-
 	}
 
-	/**
-	 * 扩散动画
+/**	 * 扩散动画
 	 * 
 	 * @author Administrator
 	 * 
@@ -250,7 +250,7 @@ public class SplshView extends View {
 		private MergingState() {
 			// 花多少秒 半径R-到0
 			animator = ValueAnimator.ofFloat(mRotationRadius, 0);
-			animator.setDuration(mRotationDuration );
+			animator.setDuration(mRotationDuration);
 			animator.setInterpolator(new OvershootInterpolator(50f));// 弹射效果
 			animator.addUpdateListener(new AnimatorUpdateListener() {
 
@@ -300,16 +300,14 @@ public class SplshView extends View {
 			// 画笔宽度=对角线一半-空心圆的半径
 			float strokewidth = mDiagonalDist / 2 - mHoleRadius;
 			// 圆的半径=对角线的一半+画笔宽度的一半
-			float radius =mHoleRadius + strokewidth / 2;
+			float radius = mHoleRadius + strokewidth / 2;
 			mPaintBackground.setStrokeWidth(strokewidth);
 			canvas.drawCircle(mCenterX, mCenterY, radius, mPaintBackground);
-		}else{
+		} else {
 			canvas.drawColor(mSplshBackColor);
 		}
-		
-	}
 
-	
+	}
 
 	/**
 	 * 绘制小圆

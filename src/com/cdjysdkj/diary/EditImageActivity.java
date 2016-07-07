@@ -81,7 +81,6 @@ public class EditImageActivity extends BaseHomeActivity {
 		setContentView(R.layout.activity_edit_image);
 		getview();
 		init();
-
 		LoadImageFilter();
 	}
 
@@ -224,56 +223,58 @@ public class EditImageActivity extends BaseHomeActivity {
 
 					progressDialog.show();
 				} else {
-					try {
-						Bitmap bitmap = mbitmap.copy(Config.ARGB_8888, true);
-						img = new Image(bitmap, isndk);
-
-						if (filter != null) {
-							img = filter.process(img);
-							img.copyPixelsFromBuffer();
-						}
-
-						// return img.getImage();
-					} catch (Exception e) {
-						if (img != null && img.destImage.isRecycled()) {
-							img.destImage.recycle();
-							img.destImage = null;
-							System.gc(); // 提醒系统及时回收
-						}
-					} finally {
-						if (img != null && img.image.isRecycled()) {
-							img.image.recycle();
-							img.image = null;
-							System.gc(); // 提醒系统及时回收
-						}
-					}
-
-					mImageView.setImageBitmap(img.destImage);
-					File file = new File(IMAGE_FILE_LOCATION);
-					BufferedOutputStream bos = null;
-					try {
-						bos = new BufferedOutputStream(new FileOutputStream(
-								file));
-					} catch (FileNotFoundException e1) {
-						e1.printStackTrace();
-					}
-					img.destImage
-							.compress(Bitmap.CompressFormat.JPEG, 100, bos);
-					try {
-						bos.flush();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-					try {
-						bos.close();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-
+					
+					 try {
+					 Bitmap bitmap = mbitmap.copy(Config.ARGB_8888, true);
+					 img = new Image(bitmap, isndk);
+					
+					 if (filter != null) {
+					 img = filter.process(img);
+					 img.copyPixelsFromBuffer();
+					 }
+					 // return img.getImage();
+					 } catch (Exception e) {
+					 if (img != null && img.destImage.isRecycled()) {
+					 img.destImage.recycle();
+					 img.destImage = null;
+					 System.gc(); // 提醒系统及时回收
+					 }
+					 } finally {
+					 if (img != null && img.image.isRecycled()) {
+					 img.image.recycle();
+					 img.image = null;
+					 System.gc(); // 提醒系统及时回收
+					 }
+					 }
+					
+					 mImageView.setImageBitmap(img.destImage);
+					 File file = new File(IMAGE_FILE_LOCATION);
+					 BufferedOutputStream bos = null;
+					 try {
+					 bos = new BufferedOutputStream(new FileOutputStream(
+					 file));
+					 } catch (FileNotFoundException e1) {
+					 e1.printStackTrace();
+					 }
+					 img.destImage
+					 .compress(Bitmap.CompressFormat.JPEG, 100, bos);
+					 try {
+					 bos.flush();
+					 } catch (IOException e) {
+					 e.printStackTrace();
+					 }
+					 try {
+					 bos.close();
+					 } catch (IOException e) {
+					 e.printStackTrace();
+					 }
+					
 				}
 			}
 		});
 	}
+
+
 
 	@Override
 	protected String getActionBarTitle() {
@@ -334,6 +335,7 @@ public class EditImageActivity extends BaseHomeActivity {
 	@Override
 	public void onBackPressed() {
 		saveAndFinish();
+
 	}
 
 	private void saveAndFinish() {
@@ -391,7 +393,7 @@ public class EditImageActivity extends BaseHomeActivity {
 			isSave = false;
 
 			try {
-				 Bitmap bitmap = mbitmap.copy(Config.ARGB_8888, true);
+				Bitmap bitmap = mbitmap.copy(Config.ARGB_8888, true);
 				img = new Image(bitmap, false);
 				if (filter != null) {
 					img = filter.process(img);
@@ -455,4 +457,5 @@ public class EditImageActivity extends BaseHomeActivity {
 		}
 		super.onDestroy();
 	}
+
 }

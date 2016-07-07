@@ -21,3 +21,11 @@ int safeColor(int a) {
 	else
 		return a;
 }
+int SAFECOLOR(int a) {
+        if (a < 0)
+            return 0;
+        else if (a > 255)
+            return 255;
+        else
+            return a;
+    }

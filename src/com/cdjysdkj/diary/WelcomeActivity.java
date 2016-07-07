@@ -112,6 +112,7 @@ public class WelcomeActivity extends Activity {
 			contentView.setBackgroundResource(R.drawable.guide_03);
 			fl.addView(contentView);
 			sp = new SplshView(this);
+			sp.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.guide_04));
 			// sp.setAlpha(0.8f);
 			fl.addView(sp);
 			setContentView(fl);

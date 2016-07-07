@@ -1,7 +1,7 @@
 package com.cdjysdkj.diary.adapter.slidingadapter;
 
 /**
- * Created by zhouweilong on 15/12/14.
+ * 
  */
 public class Item {
     private String name;
@@ -9,6 +9,8 @@ public class Item {
      * Ê±¼ä
      */
     private String dateName;
+    
+    private int image;
     private boolean isSelected;
 
     public void setSelected(boolean selected) {
@@ -39,6 +41,20 @@ public class Item {
 	 */
 	public void setDateName(String dateName) {
 		this.dateName = dateName;
+	}
+
+	/**
+	 * @return the image#{bare_field_comment}
+	 */
+	public int getImage() {
+		return image;
+	}
+
+	/**
+	 * @param image the image to set #{bare_field_comment}
+	 */
+	public void setImage(int image) {
+		this.image = image;
 	}
     
 }
