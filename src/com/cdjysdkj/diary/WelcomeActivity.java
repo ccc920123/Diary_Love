@@ -15,7 +15,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
+import com.baidu.mobads.SplashAd;
+import com.baidu.mobads.SplashAdListener;
 import com.cdjysdkj.diary.constant.Constant;
 import com.cdjysdkj.diary.utils.SDCardStatu;
 import com.cdjysdkj.diary.view.SplshView;
@@ -58,6 +61,38 @@ public class WelcomeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		RelativeLayout adsParent = (RelativeLayout) this.findViewById(R.id.adsRl); 	
+		SplashAdListener listener=new SplashAdListener() 
+		{   
+			@Override    
+			public void onAdDismissed() 
+			{    
+//				Log.i("RSplashActivity", "onAdDismissed");
+				jumpWhenCanClick();// 跳转至您的应用主界面  
+		     }
+		   @Override    
+		   public void onAdFailed(String arg0) 
+		   {    
+			   skips();
+		   }
+		   @Override  
+		   public void onAdPresent() { 
+//			   Log.i("RSplashActivity", "onAdPresent"); 
+		   }
+		   @Override   
+		   public void onAdClick() { 
+//			   Log.i("RSplashActivity", "onAdClick"); 
+			   //设置开屏可接受点击时，该回调可用     
+		   }
+		};
+		/**
+		 * 构造函数：
+		 * new SplashAd(Context context, ViewGroup adsParent,
+		 * 				SplashAdListener listener,String adPlaceId, boolean canClick, SplashType splashType);
+		 */
+		String adPlaceId ="2723339";//重要：请填上您的广告位ID
+		new SplashAd(this, adsParent, listener, adPlaceId, true);
+		
 		if (SDCardStatu.isSDCardAvailable()) {
 			File path = new File(Constant.MYAPP_PATH);
 			if (!path.exists())
@@ -76,9 +111,21 @@ public class WelcomeActivity extends Activity {
 			}
 			
 		}
-		skips();
+		
 	}
-
+	/**
+	 * 当设置开屏可点击时，需要等待跳转页面关闭后，再切换至您的主窗口。故此时需要增加waitingOnRestart判断。
+	 * 另外，点击开屏还需要在onRestart中调用jumpWhenCanClick接口。
+	 */
+	public boolean waitingOnRestart=false;
+	private void jumpWhenCanClick() {
+		if(this.hasWindowFocus()||waitingOnRestart){
+			skips();
+		}else{
+			waitingOnRestart=true;
+		}
+		
+	}
 	/**
 	 * 模拟加载数据
 	 */
@@ -107,17 +154,7 @@ public class WelcomeActivity extends Activity {
 
 		// 判断程序与第几次运行，如果是第一次运行则跳转到引导界面，否则跳转到主界面
 		if (!isFirstIn) {
-			fl = new FrameLayout(this);
-			ImageView contentView = new ImageView(this);
-			contentView.setBackgroundResource(R.drawable.guide_03);
-			fl.addView(contentView);
-			sp = new SplshView(this);
-			sp.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.guide_04));
-			// sp.setAlpha(0.8f);
-			fl.addView(sp);
-			setContentView(fl);
-			// 模拟加载数据
-			loadingData(GO_HOME);
+			jump();
 
 		} else {
 			goGuide();
@@ -125,7 +162,19 @@ public class WelcomeActivity extends Activity {
 		}
 
 	}
-
+	private void jump() {
+		fl = new FrameLayout(this);
+		ImageView contentView = new ImageView(this);
+		contentView.setBackgroundResource(R.drawable.guide_03);
+		fl.addView(contentView);
+		sp = new SplshView(this);
+		sp.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.guide_04));
+		// sp.setAlpha(0.8f);
+		fl.addView(sp);
+		setContentView(fl);
+		// 模拟加载数据
+		loadingData(GO_HOME);
+	}
 	private void goGuide() { // 跳至引导页
 		Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
 		startActivity(intent);
@@ -154,5 +203,12 @@ public class WelcomeActivity extends Activity {
 	public void onBackPressed() {
 		System.exit(0);
 		super.onBackPressed();
+	}
+	@Override
+	protected void onRestart() {
+		super.onRestart();
+		if(waitingOnRestart){
+			jumpWhenCanClick();
+		}
 	}
 }

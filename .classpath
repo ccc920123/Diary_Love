@@ -18,6 +18,7 @@
 	<classpathentry kind="lib" path="libs/ShareSDK-Wechat-Moments-2.6.6.jar"/>
 	<classpathentry kind="lib" path="libs/Volley.jar"/>
 	<classpathentry kind="lib" path="libs/gson-2.0.jar"/>
+	<classpathentry kind="lib" path="libs/Baidu_MobAds_SDK.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

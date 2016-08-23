@@ -132,9 +132,6 @@ public class ImageFilterAdapter extends BaseAdapter {
 			filterArray.add(new FilterInfo(R.drawable.video_filter3, new VideoFilter(VideoFilter.VIDEO_TYPE.VIDEO_3X3,true)));
 			filterArray.add(new FilterInfo(R.drawable.video_filter4, new VideoFilter(VideoFilter.VIDEO_TYPE.VIDEO_DOTS,true)));
 			
-			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter1, new TileReflectionFilter(20, 8, 45, (byte)1)));
-			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter2, new TileReflectionFilter(20, 8, 45, (byte)2)));
-			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter, new TileReflectionFilter(20, 8, 45, (byte)3)));//20,8
 			filterArray.add(new FilterInfo(R.drawable.fillpattern_filter, new FillPatternFilter(mContext, R.drawable.texture1)));
 			filterArray.add(new FilterInfo(R.drawable.fillpattern_filter1, new FillPatternFilter(mContext, R.drawable.texture2)));
 			
@@ -235,7 +232,10 @@ public class ImageFilterAdapter extends BaseAdapter {
 			filterArray.add(new FilterInfo(R.drawable.feather_filter,new FeatherFilter()));
 			filterArray.add(new FilterInfo(R.drawable.xradiation_filter,new XRadiationFilter()));
 			filterArray.add(new FilterInfo(R.drawable.nightvision_filter,new NightVisionFilter()));
-
+			//
+			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter1, new TileReflectionFilter(20, 8, 45, (byte)1)));
+			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter2, new TileReflectionFilter(20, 8, 45, (byte)2)));
+			filterArray.add(new FilterInfo(R.drawable.tilereflection_filter, new TileReflectionFilter(20, 8, 45, (byte)3)));//20,8
 			//filterArray.add(new FilterInfo(R.drawable.saturationmodity_filter,null/* 此处会生成原图效果 */));
 		}
 

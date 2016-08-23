@@ -11,6 +11,7 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -34,12 +35,16 @@
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="fae6cba9" />
+
         <activity
             android:name="com.cdjysdkj.diary.WelcomeActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,15 +52,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.baidu.mobads.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
             android:name="com.cdjysdkj.diary.GuideActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.HomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" 
-          >
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.PasswordActivity"
@@ -65,8 +73,8 @@
         <activity
             android:name="com.cdjysdkj.diary.TextDiaryActivity"
             android:label="@string/title_activity_text_diary"
-            android:launchMode="singleTask" 
-            android:screenOrientation="portrait">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.WriteDiaryActivity"
@@ -74,7 +82,8 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.cdjysdkj.diary.ImageDetailsActivity"
+        <activity
+            android:name="com.cdjysdkj.diary.ImageDetailsActivity"
             android:screenOrientation="portrait" >
         </activity>
         <activity
@@ -90,8 +99,8 @@
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.BillActivity"
-            android:label="@string/title_activity_bill" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_bill"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.TabBillActivity"
@@ -100,27 +109,28 @@
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.AccountActivity"
-            android:label="@string/title_activity_account" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_account"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.AddBillActivity"
             android:label="@string/title_activity_add_bill"
-            android:windowSoftInputMode="adjustPan" 
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.TransferActivity"
-            android:label="@string/title_activity_transfer" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_transfer"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.NotesListActivity"
-            android:launchMode="singleTask" 
-            android:screenOrientation="portrait">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.cdjysdkj.diary.NoteEditActivity" 
-            android:screenOrientation="portrait">
+        <activity
+            android:name="com.cdjysdkj.diary.NoteEditActivity"
+            android:screenOrientation="portrait" >
         </activity>
 
         <provider
@@ -135,8 +145,8 @@
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.AdviceActivity"
-            android:label="@string/title_activity_advice" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_advice"
+            android:screenOrientation="portrait" >
         </activity>
         <!-- 分享 -->
         <activity
@@ -169,13 +179,13 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.cdjysdkj.diary.CenterActivity"
-            android:label="@string/title_activity_center" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_center"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.MobileNoActivity"
-            android:label="@string/title_activity_mobile_no" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_mobile_no"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.IDCARDActivity"
@@ -189,15 +199,13 @@
         </activity>
         <activity
             android:name="com.cdjysdkj.diary.PostCodeActivity"
-            android:label="@string/title_activity_post_code" 
-            android:screenOrientation="portrait">
+            android:label="@string/title_activity_post_code"
+            android:screenOrientation="portrait" >
         </activity>
-          <activity
+        <activity
             android:name="com.cdjysdkj.diary.ConstellationActivity"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
-        
     </application>
 
 </manifest>
