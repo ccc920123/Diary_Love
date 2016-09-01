@@ -13,17 +13,16 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.widget.FrameLayout;
+import android.view.KeyEvent;
+import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
-import com.baidu.mobads.SplashAd;
-import com.baidu.mobads.SplashAdListener;
 import com.cdjysdkj.diary.constant.Constant;
 import com.cdjysdkj.diary.utils.SDCardStatu;
-import com.cdjysdkj.diary.view.SplshView;
+import com.qq.e.ads.splash.SplashAD;
+import com.qq.e.ads.splash.SplashADListener;
 
-public class WelcomeActivity extends Activity {
+public class WelcomeActivity extends Activity implements SplashADListener {
 	boolean isFirstIn = false;
 
 	private static final int GO_HOME = 1000;
@@ -32,8 +31,10 @@ public class WelcomeActivity extends Activity {
 	// 跳转延时
 	private static final long TIME = 2000;
 
-	private FrameLayout fl;
-	private SplshView sp;
+	private ViewGroup container;
+	private SplashAD splashAD;
+
+	public boolean canJump = false;
 	/**
 	 * Handler:跳转到不同界面
 	 */
@@ -61,71 +62,42 @@ public class WelcomeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		RelativeLayout adsParent = (RelativeLayout) this.findViewById(R.id.adsRl); 	
-		SplashAdListener listener=new SplashAdListener() 
-		{   
-			@Override    
-			public void onAdDismissed() 
-			{    
-//				Log.i("RSplashActivity", "onAdDismissed");
-				jumpWhenCanClick();// 跳转至您的应用主界面  
-		     }
-		   @Override    
-		   public void onAdFailed(String arg0) 
-		   {    
-			   skips();
-		   }
-		   @Override  
-		   public void onAdPresent() { 
-//			   Log.i("RSplashActivity", "onAdPresent"); 
-		   }
-		   @Override   
-		   public void onAdClick() { 
-//			   Log.i("RSplashActivity", "onAdClick"); 
-			   //设置开屏可接受点击时，该回调可用     
-		   }
-		};
+		container = (ViewGroup) this.findViewById(R.id.splash_container);
+		splashAD = new SplashAD(this, container, "1105647100",
+				"6040218457195678", this, 3000);
 		/**
-		 * 构造函数：
-		 * new SplashAd(Context context, ViewGroup adsParent,
-		 * 				SplashAdListener listener,String adPlaceId, boolean canClick, SplashType splashType);
+		 * 开屏广告现已增加新的接口，可以由开发者在代码中设置开屏的超时时长 SplashAD(Activity activity,
+		 * ViewGroup container, String appId, String posId, SplashADListener
+		 * adListener, int fetchDelay) fetchDelay参数表示开屏的超时时间，单位为ms，取值范围[3000,
+		 * 5000]。设置为0时表示使用广点通的默认开屏超时配置
+		 * 
+		 * splashAD = new SplashAD(this, container, Constants.APPID,
+		 * Constants.SplashPosID, this, 3000);可以设置超时时长为3000ms
 		 */
-		String adPlaceId ="2723339";//重要：请填上您的广告位ID
-		new SplashAd(this, adsParent, listener, adPlaceId, true);
-		
+
 		if (SDCardStatu.isSDCardAvailable()) {
 			File path = new File(Constant.MYAPP_PATH);
 			if (!path.exists())
 				path.mkdirs();
-			File file = new File(Constant.MYAPP_PATH,"test.jpg");
-			 Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.app_logo);
-			 FileOutputStream fileOutputStream = null;
+			File file = new File(Constant.MYAPP_PATH, "test.jpg");
+			Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
+					R.drawable.app_logo);
+			FileOutputStream fileOutputStream = null;
 			try {
 				fileOutputStream = new FileOutputStream(file);
-				 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fileOutputStream);
+				bitmap.compress(Bitmap.CompressFormat.JPEG, 100,
+						fileOutputStream);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
-			}finally{
+			} finally {
 				bitmap.recycle();
-				
+
 			}
-			
+
 		}
-		
+
 	}
-	/**
-	 * 当设置开屏可点击时，需要等待跳转页面关闭后，再切换至您的主窗口。故此时需要增加waitingOnRestart判断。
-	 * 另外，点击开屏还需要在onRestart中调用jumpWhenCanClick接口。
-	 */
-	public boolean waitingOnRestart=false;
-	private void jumpWhenCanClick() {
-		if(this.hasWindowFocus()||waitingOnRestart){
-			skips();
-		}else{
-			waitingOnRestart=true;
-		}
-		
-	}
+
 	/**
 	 * 模拟加载数据
 	 */
@@ -136,7 +108,6 @@ public class WelcomeActivity extends Activity {
 			@Override
 			public void run() {
 				//
-				sp.splshDisapaer();
 				// 使用Handler的postDelayed方法，3秒后执行跳转到MainActivity
 				mHandler.sendEmptyMessageDelayed(i, TIME);
 			}
@@ -162,19 +133,14 @@ public class WelcomeActivity extends Activity {
 		}
 
 	}
+
 	private void jump() {
-		fl = new FrameLayout(this);
 		ImageView contentView = new ImageView(this);
 		contentView.setBackgroundResource(R.drawable.guide_03);
-		fl.addView(contentView);
-		sp = new SplshView(this);
-		sp.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.guide_04));
-		// sp.setAlpha(0.8f);
-		fl.addView(sp);
-		setContentView(fl);
 		// 模拟加载数据
 		loadingData(GO_HOME);
 	}
+
 	private void goGuide() { // 跳至引导页
 		Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
 		startActivity(intent);
@@ -199,16 +165,65 @@ public class WelcomeActivity extends Activity {
 			finish();
 		}
 	}
+
+	/** 开屏页最好禁止用户对返回按钮的控制 */
 	@Override
-	public void onBackPressed() {
-		System.exit(0);
-		super.onBackPressed();
-	}
-	@Override
-	protected void onRestart() {
-		super.onRestart();
-		if(waitingOnRestart){
-			jumpWhenCanClick();
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK
+				|| keyCode == KeyEvent.KEYCODE_HOME) {
+			return true;
 		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void onADClicked() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onADDismissed() {
+
+		if (canJump) {
+			skips();
+		} else {
+			canJump = true;
+		}
+
+	}
+
+	@Override
+	public void onADPresent() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onNoAD(int arg0) {
+		/** 如果加载广告失败，则直接跳转 */
+		if (canJump) {
+			skips();
+		} else {
+			canJump = true;
+		}
+
+	}
+
+	
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		canJump = false;
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		if (canJump) {
+			skips();
+		}
+		canJump = true;
 	}
 }
